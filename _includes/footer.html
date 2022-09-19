@@ -1,0 +1,20 @@
+<footer class='footer-wrapper'>
+  <div class='footer'>
+    <div style='font-size: 0.8em'>
+      Brought to you by <a href='https://limepoint.com/'>LimePoint</a>. <br class='mobile-only'>All rights reserved ©. 2022.
+    </div>
+    <nav class='footer__nav-social'>
+      <ul>
+        {% for social in site.data.footer.socials %}
+        <li>
+          <a href='{{social.link}}'><i class='{{social.icon_class}}'>{{social.icon_content}}</i></a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+    <div class='eula' style='font-size: 0.8em'>
+      Use of this website is governed by the LimePoint <a href='{{ "files/LimePoint-OpsChain-EULA.pdf" | relative_url }}'>EULA</a>.
+    </div>
+  </div>
+  <!-- Branch: {{ site.git_branch }} Commit: {{ site.git_commit }} -->
+</footer>
