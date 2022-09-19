@@ -6,6 +6,9 @@ GIT
       commonmarker (~> 0.22)
 
 GEM
+  specs:
+
+GEM
   remote: https://rubygems.org/
   specs:
     addressable (2.8.0)
@@ -82,7 +85,7 @@ GEM
     terminal-table (2.0.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
     thread_safe (0.3.6)
-    tzinfo (1.2.9)
+    tzinfo (1.2.10)
       thread_safe (~> 0.1)
     tzinfo-data (1.2021.5)
       tzinfo (>= 1.0.0)
