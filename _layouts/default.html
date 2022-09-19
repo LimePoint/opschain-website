@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+    {{ content }}
+
+    {%- include footer.html -%}
+
+    <script src='https://polyfill.io/v3/polyfill.min.js?features=default,fetch,matchMedia%2CElement.prototype.classList'></script>
+    <script async src='/js/tether.min.js' data-role='tether-script' ></script>
+    <script async src='/js/mailcheck.min.js' data-role='mailcheck-script' ></script>
+    <script src='/js/main.js?date={{ "now" | date: "%Y%m%d%H%M" }}'></script>
+  </body>
+</html>

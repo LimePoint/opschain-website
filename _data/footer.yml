@@ -1,0 +1,13 @@
+socials:
+  - icon_class: fab fa-linkedin
+    link: 'https://www.linkedin.com/company/limepoint/'
+  - icon_class: fab fa-twitter-square
+    link: 'https://twitter.com/LimePoint'
+  - icon_class: fab fa-youtube-square
+    link: 'https://www.youtube.com/channel/UCAsEobZtnxoJy9tGIr3Kv9A'
+  - icon_class: fab fa-facebook-square
+    link: 'https://www.facebook.com/LimePoint'
+# facebook_username: LimePoint
+# linkedin_username: LimePoint
+# twitter_username: LimePoint
+# youtube_channel: UCAsEobZtnxoJy9tGIr3Kv9A

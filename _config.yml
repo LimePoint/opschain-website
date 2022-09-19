@@ -1,0 +1,34 @@
+title: OpsChain
+email: opschain@limepoint.com
+description: >-
+  OpsChain enables you to connect, automate and orchestrate processes and tools
+  across your on-premise and cloud platforms.
+baseurl: ""
+url: "https://opschain.io" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build settings
+markdown: CommonMark
+timezone: Australia/Melbourne
+google_analytics: G-6JPFLV2MP6
+
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-minifier
+  - jekyll-last-modified-at
+
+jekyll-minifier:
+  preserve_line_breaks: true
+  uglifier_args:
+    harmony: true
+  compress_css: false # upstream bug
+
+commonmark:
+  options: ['SMART', 'FOOTNOTES', 'UNSAFE']
+  extensions: ['strikethrough', 'autolink', 'table']
