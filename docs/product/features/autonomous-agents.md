@@ -6,7 +6,7 @@ id: autonomous-agents
 displayed_sidebar: productSidebar
 ---
 
-<img src="/img/tracking.svg" alt="img" width="150" align="right"/>
+<img src="/img/tracking.svg" alt="img" width="200" align="right"/>
 
 ### Autonomous Agents
 

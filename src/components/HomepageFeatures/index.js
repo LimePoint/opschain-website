@@ -94,6 +94,21 @@ const FeatureList = [
       </>
     ),
   },
+  // {
+  //   title: 'Pluggable Automation',
+  //   Svg: require('@site/static/img/opschain-plugins.svg').default,
+  //   description: (
+  //     <>
+  //       <b>
+  //         <i>Automate Without Limits.</i>
+  //       </b>
+  //       <br />
+  //       Unify your favorite tools under one governed platform — with zero friction.
+  //       <br />
+  //       <a href='/docs/product/features/pluggable-automation'>Explore Pluggable Automation</a>
+  //     </>
+  //   ),
+  // },
 ]
 
 function Feature({ Svg, title, description }) {

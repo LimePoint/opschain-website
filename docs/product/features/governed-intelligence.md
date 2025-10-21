@@ -6,7 +6,7 @@ id: governed-intelligence
 displayed_sidebar: productSidebar
 ---
 
-<img src="/img/undraw-collaboration.svg" alt="img" width="150" align="right"/>
+<img src="/img/undraw-collaboration.svg" alt="img" width="200" align="right"/>
 
 ### Governed Intelligence
 

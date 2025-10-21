@@ -92,6 +92,11 @@ const config = {
                 label: 'Unified Workflow and Orchestration',
                 docId: 'product/features/unified-workflow-orchestration',
               },
+              {
+                type: 'doc',
+                label: 'Pluggable Automation',
+                docId: 'product/features/pluggable-automation',
+              },
               // {
               //   type: 'doc',
               //   label: 'Real-Time Observability & Self-Healing Operations',

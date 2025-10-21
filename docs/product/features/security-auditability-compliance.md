@@ -6,7 +6,7 @@ id: security-auditability-compliance
 displayed_sidebar: productSidebar
 ---
 
-<img src="/img/undraw-security.svg" alt="img" width="150" align="right"/>
+<img src="/img/undraw-security.svg" alt="img" width="200" align="right"/>
 
 ### Enterprise-Grade Security, Auditability, and Compliance
 
