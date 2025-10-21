@@ -17,9 +17,9 @@
         "prepare": "husky install"
     },
     "dependencies": {
-        "@docusaurus/core": "^3.9.1",
-        "@docusaurus/plugin-google-gtag": "^3.9.1",
-        "@docusaurus/preset-classic": "^3.9.1",
+        "@docusaurus/core": "^3.9.2",
+        "@docusaurus/plugin-google-gtag": "^3.9.2",
+        "@docusaurus/preset-classic": "^3.9.2",
         "@fontsource/poppins": "^5.2.7",
         "@fontsource/rubik": "^5.2.8",
         "@mdx-js/react": "^3.1.1",
@@ -32,7 +32,7 @@
         "react-dom": "^19.2.0"
     },
     "devDependencies": {
-        "@docusaurus/module-type-aliases": "^3.9.1",
+        "@docusaurus/module-type-aliases": "^3.9.2",
         "husky": "^9.1.7",
         "lint-staged": "^16.2.4"
     },
