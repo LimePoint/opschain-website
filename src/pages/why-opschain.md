@@ -5,7 +5,7 @@
 
 Because modern enterprises need operations that are intelligent, autonomous, and governed — all in one platform.
 
-<h2>🧩 The Problem We Solve</h2>
+## 🧩 The Problem We Solve
 
 Enterprise operations are more complex than ever — hybrid environments, legacy systems, global teams, and endless manual tasks.
 Even the best-run organizations struggle with:
@@ -15,30 +15,31 @@ Even the best-run organizations struggle with:
 - Compliance and audit fatigue
 - Difficulty scaling with scarce talent
 
-<b>Traditional automation tools</b> can improve speed, but not trust. They lack governance, visibility, and continuous performance. Enterprise operations are more complex than ever — hybrid environments, legacy systems, global teams, and endless manual tasks.
+**Traditional automation tools** can improve speed, but not trust. They lack governance, visibility, and continuous performance. Enterprise operations are more complex than ever — hybrid environments, legacy systems, global teams, and endless manual tasks.
 
-<blockquote>OpsChain doesn’t just automate operations — it governs them. Where intelligence meets control.</blockquote>
+> #### _OpsChain doesn’t just automate operations — it governs them. Where intelligence meets control._
+
 <br/>
 
-<h2>🤖 Our Vision</h2>
+## 🤖 Our Vision
 
 To empower every enterprise to run operations that are
 autonomous, intelligent, and compliant by design.
 <br/>
 
-<h2>🧠 Our Technology Philosophy</h2>
+## 🧠 Our Technology Philosophy
 
-- <b>Governance first.</b> Trust and transparency aren’t optional — they’re foundational.
-- <b>Human + AI collaboration.</b> People set direction; AI executes with precision.
-- <b>Continuous improvement.</b> Every action makes the next smarter, faster, and safer.
+- **Governance first.** Trust and transparency aren’t optional — they’re foundational.
+- **Human + AI collaboration.** People set direction; AI executes with precision.
+- **Continuous improvement.** Every action makes the next smarter, faster, and safer.
 <br/>
 
-<h2>🚀 What Makes OpsChain Unique</h2>
+## 🚀 What Makes OpsChain Unique
 
 The only platform combining governance, automation, and AI into a single enterprise operations stack.
-- <b>Always-on Autonomous Agents</b> — digital teammates that work 24x7 with full compliance and traceability.
-- <b>Built for scale and security</b> — ready for the world’s most regulated industries.
-- <b>Proven outcomes</b> — faster resolution, lower cost, higher uptime, and zero compliance risk.
+- **Always-on Autonomous Agents** — digital teammates that work 24x7 with full compliance and traceability.
+- **Built for scale and security** — ready for the world’s most regulated industries.
+- **Proven outcomes** — faster resolution, lower cost, higher uptime, and zero compliance risk.
 
+> #### ***Intelligent. Autonomous. Governed.***
 <br/>
-<h3>Intelligent. Autonomous. Governed.</h3>
