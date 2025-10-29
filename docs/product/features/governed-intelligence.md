@@ -20,3 +20,7 @@ Every decision and execution step taken by an agent is logged and attributable, 
 Approvals are configurable — use them where needed, skip them where speed matters. You stay in control without becoming a bottleneck.
 
 <b><i>Governed intelligence means AI agents don’t just act — they act accountably.</i></b>
+<br/>
+<br/>
+
+[Don’t just automate — govern. See Governed Intelligence in action. **Book your demo**](/book-demo/)

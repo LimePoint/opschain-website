@@ -20,3 +20,7 @@ Secrets and credentials are secured via internal vaults or your own enterprise-g
 Every action taken by AI agents or humans is fully logged, traceable, and governed by policy — ensuring compliance, accountability, and peace of mind.
 
 <b><i>Security isn't an afterthought — it's foundational.</i></b>
+<br/>
+<br/>
+
+[Secure. Audit. Comply. See **OpsChain** in action — **book a demo**.](/book-demo/)

@@ -21,5 +21,7 @@ Break down silos with end-to-end automation that spans infrastructure, applicati
 
 OpsChain's <a href="/docs/product/features/pluggable-automation">Pluggable Automation</a> framework allows you to bring your own automation capability.
 
+[One workflow platform, endless possibilities. See it live — **schedule a demo**.](/book-demo/)
+
 <!-- - <i>Terraform, Ansible, Bash, Java, Python, CLIs, no problem!</i> -->
 <!-- Simply connect your tools of choice and plugin your existing automation capability into the platform. -->
