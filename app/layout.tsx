@@ -3,8 +3,9 @@ import { Poppins, Rubik } from 'next/font/google'
 import './globals.css'
 import { Navbar } from '@/components/ui/Navbar'
 import { Footer } from '@/components/ui/Footer'
-import { GTMProvider } from '@/components/analytics/GTMProvider'
+import { GTMHead, GTMBody } from '@/components/analytics/GTMProvider'
 import { RouteChangeTracker } from '@/components/analytics/RouteChangeTracker'
+import { SearchData } from '@/components/search/SearchData'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -62,12 +63,16 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='en' className={`${poppins.variable} ${rubik.variable}`}>
+      <head>
+        <GTMHead />
+      </head>
       <body className='flex min-h-screen flex-col font-body antialiased'>
-        <GTMProvider />
+        <GTMBody />
         <RouteChangeTracker />
         <Navbar />
         <main className='flex-1'>{children}</main>
         <Footer />
+        <SearchData />
       </body>
     </html>
   )

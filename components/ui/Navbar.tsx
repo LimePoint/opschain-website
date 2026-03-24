@@ -6,6 +6,7 @@ import { useCallback, useEffect, useState } from 'react'
 import { usePathname } from 'next/navigation'
 import clsx from 'clsx'
 import { motion, AnimatePresence, useReducedMotion } from 'framer-motion'
+import { SearchDialog } from '@/components/search/SearchDialog'
 
 // ---------------------------------------------------------------------------
 // Types & data
@@ -297,8 +298,9 @@ export function Navbar() {
           </a>
         </div>
 
-        {/* CTA */}
-        <div className='hidden lg:block'>
+        {/* Search + CTA */}
+        <div className='hidden items-center gap-3 lg:flex'>
+          <SearchDialog />
           <Link
             href='/book-demo/'
             className='inline-flex items-center rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-primary-dark transition-colors'

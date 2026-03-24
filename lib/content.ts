@@ -1,15 +1,20 @@
 import { posts, datasheets, webinars } from '@/.velite'
+import authors, { type Author } from '@/content/authors'
 
+export type { Author }
 export type BlogPost = (typeof posts)[number]
 export type Datasheet = (typeof datasheets)[number]
 export type Webinar = (typeof webinars)[number]
 
-export function getAllBlogPosts(): BlogPost[] {
+export function getAuthor(name: string): Author | undefined {
+  return authors[name]
+}
+
+const showDrafts = process.env.NEXT_PUBLIC_SHOW_DRAFTS === 'true'
+
+export function getAllBlogPosts({ includeDrafts = showDrafts } = {}): BlogPost[] {
   return posts
-    .filter((post) => {
-      if (process.env.NODE_ENV === 'production' && post.draft) return false
-      return true
-    })
+    .filter((post) => includeDrafts || !post.draft)
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
 }
 
@@ -35,6 +40,26 @@ export function getAllWebinars(): Webinar[] {
 
 export function getWebinar(slug: string): Webinar | undefined {
   return webinars.find((w) => w.slug === slug)
+}
+
+export function getAllTags(): string[] {
+  const tags = new Set<string>()
+  for (const post of getAllBlogPosts()) {
+    for (const tag of post.tags) tags.add(tag)
+  }
+  return Array.from(tags).sort()
+}
+
+export function getPostsByTag(tag: string): BlogPost[] {
+  return getAllBlogPosts().filter((post) => post.tags.includes(tag))
+}
+
+export function tagToSlug(tag: string): string {
+  return tag.toLowerCase().replace(/\s+/g, '-')
+}
+
+export function slugToTag(slug: string): string | undefined {
+  return getAllTags().find((tag) => tagToSlug(tag) === slug)
 }
 
 export function getRelatedPosts(currentSlug: string, tags: string[], limit: number = 3): BlogPost[] {

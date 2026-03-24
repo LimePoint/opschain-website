@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef, type FormEvent, type ReactNode } from 'react'
 import { getUTMParams, captureUTMParams } from '@/lib/utm'
-import { useGTM } from '@/components/analytics/GTMProvider'
+import { useGTM } from '@/components/analytics/useGTM'
 
 const SF_ENDPOINT = 'https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8'
 const SF_ORG_ID = process.env.NEXT_PUBLIC_SF_ORG_ID || '00DQE00000BdTqD'

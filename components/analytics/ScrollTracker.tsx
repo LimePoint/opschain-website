@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useRef } from 'react'
-import { useGTM } from './GTMProvider'
+import { useGTM } from './useGTM'
 
 const THRESHOLDS = [25, 50, 75, 100]
 

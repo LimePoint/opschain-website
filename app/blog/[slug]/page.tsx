@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { getAllBlogSlugs, getBlogPost, getRelatedPosts } from '@/lib/content'
+import Image from 'next/image'
+import { getAllBlogSlugs, getBlogPost, getRelatedPosts, getAuthor, tagToSlug } from '@/lib/content'
 import { BlogPostingSchema } from '@/components/seo/JsonLd'
 import { ScrollTracker } from '@/components/analytics/ScrollTracker'
 import { PageTransition } from '@/components/PageTransition'
@@ -11,6 +12,8 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://opschain.io'
 interface PageProps {
   params: Promise<{ slug: string }>
 }
+
+export const dynamicParams = false
 
 export async function generateStaticParams() {
   return getAllBlogSlugs().map((slug) => ({ slug }))
@@ -42,6 +45,7 @@ export default async function BlogPostPage({ params }: PageProps) {
   if (!post) notFound()
 
   const related = getRelatedPosts(post.slug, post.tags)
+  const author = getAuthor(post.author)
 
   return (
     <PageTransition>
@@ -64,6 +68,22 @@ export default async function BlogPostPage({ params }: PageProps) {
 
         <header className='mb-8'>
           <div className='flex items-center gap-3 text-sm text-gray-500'>
+            {author && (
+              <Image src={author.avatarUrl} alt={author.name} width={32} height={32} className='rounded-full' />
+            )}
+            {author?.links?.linkedin ? (
+              <a
+                href={author.links.linkedin}
+                target='_blank'
+                rel='noopener noreferrer'
+                className='text-gray-700 hover:text-primary transition-colors'
+              >
+                {author.name}
+              </a>
+            ) : (
+              <span>{author?.name ?? post.author}</span>
+            )}
+            <span>&middot;</span>
             <time dateTime={post.date}>
               {new Date(post.date).toLocaleDateString('en-US', {
                 year: 'numeric',
@@ -73,15 +93,17 @@ export default async function BlogPostPage({ params }: PageProps) {
             </time>
             <span>&middot;</span>
             <span>{Math.ceil(post.metadata.readingTime)} min read</span>
-            <span>&middot;</span>
-            <span>{post.author}</span>
           </div>
           <h1 className='mt-4 text-4xl font-bold font-heading text-gray-900 leading-tight'>{post.title}</h1>
           <div className='mt-4 flex flex-wrap gap-2'>
             {post.tags.map((tag) => (
-              <span key={tag} className='rounded-full bg-gray-100 px-3 py-1 text-xs text-gray-600'>
+              <Link
+                key={tag}
+                href={`/blog/tags/${tagToSlug(tag)}/`}
+                className='rounded-full bg-gray-100 px-3 py-1 text-xs text-gray-600 hover:bg-primary hover:text-white transition-colors'
+              >
                 {tag}
-              </span>
+              </Link>
             ))}
           </div>
         </header>
@@ -101,6 +123,63 @@ export default async function BlogPostPage({ params }: PageProps) {
             Book a Demo
           </Link>
         </div>
+
+        {/* Author bio */}
+        {author && (
+          <div className='mt-12 flex items-start gap-4 rounded-xl border border-gray-200 p-6'>
+            <Image src={author.avatarUrl} alt={author.name} width={64} height={64} className='rounded-full shrink-0' />
+            <div>
+              {author.links?.linkedin ? (
+                <a
+                  href={author.links.linkedin}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='font-semibold font-heading text-gray-900 hover:text-primary transition-colors'
+                >
+                  {author.name}
+                </a>
+              ) : (
+                <p className='font-semibold font-heading text-gray-900'>{author.name}</p>
+              )}
+              <p className='text-sm text-gray-500'>{author.role}</p>
+              <p className='mt-2 text-sm text-gray-600'>{author.bio}</p>
+              {author.links && (
+                <div className='mt-2 flex gap-3'>
+                  {author.links.linkedin && (
+                    <a
+                      href={author.links.linkedin}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      className='text-sm text-primary hover:text-primary-dark'
+                    >
+                      LinkedIn
+                    </a>
+                  )}
+                  {author.links.github && (
+                    <a
+                      href={author.links.github}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      className='text-sm text-primary hover:text-primary-dark'
+                    >
+                      GitHub
+                    </a>
+                  )}
+                  {author.links.website && (
+                    <a
+                      href={author.links.website}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      className='text-sm text-primary hover:text-primary-dark'
+                    >
+                      Website
+                    </a>
+                  )}
+                </div>
+              )}
+            </div>
+          </div>
+        )}
 
         {/* Related posts */}
         {related.length > 0 && (

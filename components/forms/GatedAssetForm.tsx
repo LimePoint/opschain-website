@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { SalesforceForm, FormField } from './SalesforceForm'
-import { useGTM } from '@/components/analytics/GTMProvider'
+import { useGTM } from '@/components/analytics/useGTM'
 
 interface GatedAssetFormProps {
   assetName: string
@@ -67,12 +67,12 @@ export function GatedAssetForm({ assetName, downloadUrl, available = false }: Ga
         submitLabel='Access Resource'
       >
         <div className='grid gap-4 sm:grid-cols-2'>
-          <FormField label='First Name' name='first_name' required placeholder='Jane' />
-          <FormField label='Last Name' name='last_name' required placeholder='Smith' />
+          <FormField label='First Name' name='first_name' required placeholder='Tony' />
+          <FormField label='Last Name' name='last_name' required placeholder='Stark' />
         </div>
-        <FormField label='Work Email' name='email' type='email' required placeholder='jane@company.com' />
-        <FormField label='Company' name='company' required placeholder='Acme Corp' />
-        <FormField label='Job Title' name='title' placeholder='VP Engineering' />
+        <FormField label='Work Email' name='email' type='email' required placeholder='tony@starkindustries.com' />
+        <FormField label='Company' name='company' required placeholder='Stark Industries' />
+        <FormField label='Job Title' name='title' placeholder='CEO' />
       </SalesforceForm>
     </div>
   )

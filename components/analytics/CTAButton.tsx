@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { useGTM } from './GTMProvider'
+import { useGTM } from './useGTM'
 
 interface CTAButtonProps {
   href: string

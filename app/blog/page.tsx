@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { getAllBlogPosts } from '@/lib/content'
+import { getAllBlogPosts, tagToSlug } from '@/lib/content'
 import { PageTransition } from '@/components/PageTransition'
 
 export const metadata: Metadata = {
@@ -48,9 +48,13 @@ export default function BlogIndex() {
               <p className='mt-2 text-gray-600'>{post.description}</p>
               <div className='mt-3 flex flex-wrap gap-2'>
                 {post.tags.slice(0, 4).map((tag) => (
-                  <span key={tag} className='rounded-full bg-gray-100 px-3 py-1 text-xs text-gray-600'>
+                  <Link
+                    key={tag}
+                    href={`/blog/tags/${tagToSlug(tag)}/`}
+                    className='rounded-full bg-gray-100 px-3 py-1 text-xs text-gray-600 hover:bg-primary hover:text-white transition-colors'
+                  >
                     {tag}
-                  </span>
+                  </Link>
                 ))}
               </div>
               <Link
