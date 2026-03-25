@@ -19,6 +19,7 @@ const nextConfig: NextConfig = {
   output: 'export',
   trailingSlash: true,
   images: { unoptimized: true },
+  outputFileTracingRoot: __dirname,
   webpack: (config) => {
     config.plugins.push(new VeliteWebpackPlugin())
     return config

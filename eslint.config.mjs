@@ -14,6 +14,7 @@ const eslintConfig = [
   {
     rules: {
       "@next/next/no-img-element": "off",
+      "@next/next/next-script-for-ga": "off",
     },
   },
 ];

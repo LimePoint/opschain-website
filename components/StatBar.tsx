@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from 'react'
 
 // TODO: replace with real metrics
 const stats = [
-  { value: 500, suffix: '+', label: 'Changes Automated Daily' },
+  { value: 500000, suffix: '+', label: 'Changes Automated Monthly' },
   { value: 99.9, suffix: '%', label: 'Compliance Rate', decimals: 1 },
   { value: 3, suffix: '', label: 'Regulated Verticals' },
   { value: 24, suffix: '/7', label: 'Autonomous Operations' },

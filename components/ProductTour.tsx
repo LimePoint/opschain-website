@@ -39,6 +39,13 @@ const tabs: Tab[] = [
     description:
       'Every action recorded, every decision traceable. Meet SOC 2, ISO 27001, and industry-specific compliance requirements with an immutable, end-to-end audit trail.', // TODO: finalize description copy
   },
+  {
+    id: 'pluggable-automation',
+    label: 'Pluggable Automation',
+    heading: 'Pluggable Automation', // TODO: finalize heading copy
+    description:
+      'Pluggable automation framework gives you the freedom to integrate any tool, system, or workflow into a single, secure operations ecosystem. Whether you rely on Terraform, Ansible, custom scripts, or emerging technologies, OpsChain is completely tool-agnostic.', // TODO: finalize description copy
+  },
 ]
 
 export function ProductTour() {

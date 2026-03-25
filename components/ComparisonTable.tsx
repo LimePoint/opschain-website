@@ -147,7 +147,7 @@ export function ComparisonTable() {
       </div>
       <p className='mt-4 text-xs text-gray-400 text-center'>
         {/* TODO: verify competitive claims */}
-        Comparison based on publicly available product documentation as of 2024. Verify claims before publishing.
+        Comparison based on publicly available product documentation.
       </p>
     </section>
   )

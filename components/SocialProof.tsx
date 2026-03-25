@@ -3,7 +3,7 @@
 import { useReducedMotion } from 'framer-motion'
 
 // TODO: replace with real logos
-const companies = [
+const companies: string[] = [
   'Acme Utilities',
   'Global Banking Corp',
   'TeleConnect',

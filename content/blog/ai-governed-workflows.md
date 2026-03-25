@@ -18,8 +18,6 @@ tags:
 draft: false
 ---
 
-# How AI-Governed Workflows Are Redefining Enterprise Operations
-
 AI is becoming an increasingly important part of modern enterprise operations — helping automate tasks, accelerate decisions, and keep systems running around the clock.
 
 But as automation becomes more intelligent, a new challenge emerges: **how do you maintain control when machines start making decisions for you?**
@@ -108,10 +106,3 @@ AI is redefining how enterprises run operations, but without governance, it’s 
 OpsChain turns AI-driven workflows into **traceable, explainable, and secure operations** that balance intelligence with control.  
 
 It’s the future of automation: intelligent, auditable, and governed.
-
----
-
-### 🚀 Next Steps
-> **Discover how OpsChain enables governed AI workflows and brings structure, safety, and intelligence to your automation.**
->
-> 👉 [**Book a demo**](https://www.opschain.io/book-demo) 
