@@ -98,10 +98,10 @@ export default function OurApproachPage() {
                 <span className='mt-0.5 text-primary font-bold'>&#10003;</span>
                 <span>
                   <Link href={item.href} className='text-primary hover:underline font-medium'>
-                    {item.text.split(' — ')[0]}
+                    {item.text.split(': ')[0]}
                   </Link>
-                  {' — '}
-                  {item.text.split(' — ')[1]}
+                  {': '}
+                  {item.text.split(': ')[1]}
                 </span>
               </li>
             ))}
