@@ -1,6 +1,6 @@
 ---
 title: 'Connecting ServiceNow, GitHub, and the Real World of Change'
-date: '2026-01-04T10:00'
+date: '2026-02-10T10:00'
 description: >-
   Learn how OpsChain provides a unified change orchestration layer, bridging
   ITSM, Git, and automation platforms under a single governed process.
@@ -135,5 +135,9 @@ These outcomes demonstrate that governance and speed are not mutually exclusive,
 > OpsChain connects ServiceNow, GitHub, and every part of your delivery pipeline into one unified, governed process.
 
 ---
-### Explore the full series  
-This blog is part of the Series [**Modern Operations without Friction**](/blog/modern-operations-without-friction). Read more to see how OpsChain can simplify your enterprise operations today.
+### Modern Operations Without the Friction — Part 8 of 10
+
+This article is part of the [**Modern Operations Without the Friction**](/blog/modern-operations-without-friction) series, exploring how OpsChain helps enterprises unify people, processes, and technology under one governed automation platform.
+
+**Previous:** [Platform Engineering and Operational Maturity](/blog/platform-engineering-and-operational-maturity) (Part 7 of 10)  
+**Next:** [The Road to Autonomous Operations](/blog/the-road-to-autonomous-operations) (Part 9 of 10)

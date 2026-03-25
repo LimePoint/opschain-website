@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { getAllTags, getPostsByTag, slugToTag, tagToSlug } from '@/lib/content'
+import { getAllTags, getPostsByTag, readingTime, slugToTag, tagToSlug } from '@/lib/content'
 import { PageTransition } from '@/components/PageTransition'
 
 interface PageProps {
@@ -58,7 +58,7 @@ export default async function TagPage({ params }: PageProps) {
                   })}
                 </time>
                 <span>&middot;</span>
-                <span>{Math.ceil(post.metadata.readingTime)} min read</span>
+                <span>{readingTime(post)} min read</span>
               </div>
               <h2 className='mt-2 text-2xl font-semibold font-heading'>
                 <Link href={`/blog/${post.slug}/`} className='text-gray-900 hover:text-primary transition-colors'>

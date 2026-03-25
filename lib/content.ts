@@ -10,6 +10,13 @@ export function getAuthor(name: string): Author | undefined {
   return authors[name]
 }
 
+const WORDS_PER_MINUTE = 230
+
+export function readingTime(post: { metadata: { wordCount: number } }): number {
+  const minutes = post.metadata.wordCount / WORDS_PER_MINUTE
+  return Math.max(1, Math.ceil(minutes))
+}
+
 function isDraftVisible(): boolean {
   const value = process.env.NEXT_PUBLIC_SHOW_DRAFTS
   // Default to false — drafts are hidden unless explicitly set to 'true'
@@ -27,6 +34,12 @@ function filterDraft<T extends { draft: boolean }>(items: T[]): T[] {
 
 export function getAllBlogPosts(): BlogPost[] {
   return filterDraft(posts).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+}
+
+export function getFeaturedPosts(limit: number = 3): BlogPost[] {
+  return getAllBlogPosts()
+    .filter((post) => post.featured)
+    .slice(0, limit)
 }
 
 export function getBlogPost(slug: string): BlogPost | undefined {

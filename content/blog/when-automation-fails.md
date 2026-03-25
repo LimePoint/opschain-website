@@ -1,6 +1,6 @@
 ---
 title: 'When Automation Fails: Why Tool-Centric Thinking Limits Enterprise Scale'
-date: '2026-01-19T10:00'
+date: '2026-01-20T10:00'
 description: >-
   How OpsChain’s Pluggable Automation model enables automation across
   heterogeneous environments, governed by shared workflows, approvals, and
@@ -151,5 +151,9 @@ It’s not about replacing what works. It’s about unifying what’s already th
 > OpsChain connects and governs every automation path across your enterprise, creating a single, trusted system of operational control.
 
 ---
-### Explore the full series  
-This blog is part of the Series [**Modern Operations without Friction**](/blog/modern-operations-without-friction). Read more to see how OpsChain can simplify your enterprise operations today.
+### Modern Operations Without the Friction — Part 3 of 10
+
+This article is part of the [**Modern Operations Without the Friction**](/blog/modern-operations-without-friction) series, exploring how OpsChain helps enterprises unify people, processes, and technology under one governed automation platform.
+
+**Previous:** [Governance Without Slowdown](/blog/governance-without-slowdown) (Part 2 of 10)  
+**Next:** [The Human Factor in Enterprise Operations](/blog/the-human-factor-in-enterprise-operations) (Part 4 of 10)

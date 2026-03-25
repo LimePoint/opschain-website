@@ -1,6 +1,6 @@
 ---
 title: Rethinking Change Management for the AI Era
-date: '2026-01-10T10:00'
+date: '2026-03-10T10:00'
 description: >-
   Discover how OpsChain’s governed change pipelines and AI-driven policy
   enforcement redefine change control for modern enterprises.
@@ -153,5 +153,8 @@ Change becomes continuous, and continuously governed.
 > OpsChain enables AI-era change processes that are fast, compliant, and explainable by design.
 
 ---
-### Explore the full series  
-This blog is part of the Series [**Modern Operations without Friction**](/blog/modern-operations-without-friction). Read more to see how OpsChain can simplify your enterprise operations today.
+### Modern Operations Without the Friction — Part 10 of 10
+
+This article is part of the [**Modern Operations Without the Friction**](/blog/modern-operations-without-friction) series, exploring how OpsChain helps enterprises unify people, processes, and technology under one governed automation platform.
+
+**Previous:** [The Road to Autonomous Operations](/blog/the-road-to-autonomous-operations) (Part 9 of 10)

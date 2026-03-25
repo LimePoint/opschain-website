@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import Image from 'next/image'
-import { getAllBlogSlugs, getBlogPost, getRelatedPosts, getAuthor, tagToSlug } from '@/lib/content'
+import { getAllBlogSlugs, getBlogPost, getRelatedPosts, getAuthor, readingTime, tagToSlug } from '@/lib/content'
 import { BlogPostingSchema } from '@/components/seo/JsonLd'
 import { ScrollTracker } from '@/components/analytics/ScrollTracker'
 import { PageTransition } from '@/components/PageTransition'
@@ -94,7 +94,7 @@ export default async function BlogPostPage({ params }: PageProps) {
               })}
             </time>
             <span>&middot;</span>
-            <span>{Math.ceil(post.metadata.readingTime)} min read</span>
+            <span>{readingTime(post)} min read</span>
           </div>
           <h1 className='mt-4 text-4xl font-bold font-heading text-gray-900 leading-tight'>{post.title}</h1>
           <div className='mt-4 flex flex-wrap gap-2'>
@@ -191,7 +191,7 @@ export default async function BlogPostPage({ params }: PageProps) {
               {related.map((r) => (
                 <Link key={r.slug} href={`/blog/${r.slug}/`} className='group'>
                   <h4 className='text-sm font-medium text-gray-900 group-hover:text-primary'>{r.title}</h4>
-                  <p className='mt-1 text-xs text-gray-500'>{Math.ceil(r.metadata.readingTime)} min read</p>
+                  <p className='mt-1 text-xs text-gray-500'>{readingTime(r)} min read</p>
                 </Link>
               ))}
             </div>

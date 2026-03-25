@@ -1,6 +1,6 @@
 ---
 title: The Road to Autonomous Operations
-date: '2026-01-16T10:00'
+date: '2026-03-26T10:00'
 description: >-
   Learn how OpsChain’s platform enables controlled autonomy, combining AI,
   automation, and policy governance in one framework.
@@ -153,5 +153,9 @@ This isn’t science fiction, it’s the logical extension of mature automation 
 > OpsChain brings both together, delivering autonomous operations you can trust.
 
 ---
-### Explore the full series  
-This blog is part of the Series [**Modern Operations without Friction**](/blog/modern-operations-without-friction). Read more to see how OpsChain can simplify your enterprise operations today.
+### Modern Operations Without the Friction — Part 9 of 10
+
+This article is part of the [**Modern Operations Without the Friction**](/blog/modern-operations-without-friction) series, exploring how OpsChain helps enterprises unify people, processes, and technology under one governed automation platform.
+
+**Previous:** [Connecting ServiceNow, GitHub, and the Real World](/blog/connecting-servicenow-github-and-the-real-world-of-change) (Part 8 of 10)  
+**Next:** [Rethinking Change Management for the AI Era](/blog/rethinking-change-management-for-the-ai-era) (Part 10 of 10)

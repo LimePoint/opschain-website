@@ -21,6 +21,7 @@ export default defineConfig({
         slug: s.string(),
         tags: s.array(s.string()).default([]),
         draft: s.boolean().default(false),
+        featured: s.boolean().default(false),
         ogImage: s.string().optional(),
         content: s.markdown(),
         metadata: s.metadata(),

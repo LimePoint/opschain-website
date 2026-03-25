@@ -1,6 +1,6 @@
 ---
 title: The Human Factor in Enterprise Operations
-date: '2026-03-15T10:00'
+date: '2026-01-27T10:00'
 description: >-
   Learn how OpsChain provides a single source of operational truth, reducing
   handover errors. Automates routine governance, so humans can focus on
@@ -142,5 +142,9 @@ The result is an operational environment where people, processes, and technology
 > OpsChain transforms human activity into governed, data-driven operations that balance autonomy with accountability.
 
 ---
-### Explore the full series  
-This blog is part of the Series [**Modern Operations without Friction**](/blog/modern-operations-without-friction). Read more to see how OpsChain can simplify your enterprise operations today.
+### Modern Operations Without the Friction — Part 4 of 10
+
+This article is part of the [**Modern Operations Without the Friction**](/blog/modern-operations-without-friction) series, exploring how OpsChain helps enterprises unify people, processes, and technology under one governed automation platform.
+
+**Previous:** [When Automation Fails](/blog/when-automation-fails) (Part 3 of 10)  
+**Next:** [AI-Governed Operations](/blog/ai-governed-operations) (Part 5 of 10)

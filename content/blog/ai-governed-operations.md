@@ -1,6 +1,6 @@
 ---
 title: 'From Reactive to Proactive: AI-Governed Operations'
-date: '2026-01-19T10:00'
+date: '2026-03-17T10:00'
 description: >-
   Discover how OpsChain’s Governed Intelligence and Autonomous Agents
   capabilities deliver explainable, auditable automation across complex
@@ -157,5 +157,9 @@ This is not automation for speed alone. It’s automation with integrity, where 
 > OpsChain’s Governed Intelligence and Autonomous Agents enable proactive, compliant operations, intelligent enough to act, transparent enough to trust.
 
 ---
-### Explore the full series  
-This blog is part of the Series [**Modern Operations without Friction**](/blog/modern-operations-without-friction). Read more to see how OpsChain can simplify your enterprise operations today.
+### Modern Operations Without the Friction — Part 5 of 10
+
+This article is part of the [**Modern Operations Without the Friction**](/blog/modern-operations-without-friction) series, exploring how OpsChain helps enterprises unify people, processes, and technology under one governed automation platform.
+
+**Previous:** [The Human Factor in Enterprise Operations](/blog/the-human-factor-in-enterprise-operations) (Part 4 of 10)  
+**Next:** [Security, Auditability, and Compliance](/blog/security-auditability-compliance) (Part 6 of 10)

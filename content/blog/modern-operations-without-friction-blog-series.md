@@ -1,6 +1,6 @@
 ---
-title: Modern Operations Without the Friction
-date: '2026-02-08T10:00'
+title: Series - Modern Operations Without the Friction
+date: '2026-03-12T10:00'
 description: >-
   The Modern Operations Without the Friction series explores the practical
   challenges facing IT leaders today and how OpsChain helps enterprises unify
@@ -12,6 +12,7 @@ tags:
   - OpsChain
   - Modern Operations without Friction
 draft: false
+featured: true
 ---
 
 Enterprise operations have never been more complex, or more fragmented.  
@@ -88,7 +89,7 @@ OpsChain turns governance into a built-in service layer, enabling **governed sel
 
 ---
 
-## 8. [Connecting ServiceNow, GitHub, and the Real World of Change](/blog/connecting-servicenow-github-and-change)
+## 8. [Connecting ServiceNow, GitHub, and the Real World of Change](/blog/connecting-servicenow-github-and-the-real-world-of-change)
 **Summary:**  
 Integrating ServiceNow and GitHub exposes the mismatch between ITSM control and DevOps speed.  
 OpsChain bridges that divide with **Unified Workflow Orchestration**, creating a single, governed process that links approvals, automation, and evidence in real time.  
@@ -106,7 +107,7 @@ OpsChain enables enterprises to evolve from reactive control to **governed auton
 
 ---
 
-## 10. [Rethinking Change Management for the AI Era](/blog/rethinking-change-management-for-ai-era)
+## 10. [Rethinking Change Management for the AI Era](/blog/rethinking-change-management-for-the-ai-era)
 **Summary:**  
 Legacy change management can’t keep up with AI and automation.  
 OpsChain replaces manual approvals with **policy-driven governance**, ensuring every change, human or AI-driven, is fast, compliant, and explainable.

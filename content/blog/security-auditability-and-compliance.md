@@ -1,6 +1,6 @@
 ---
 title: 'Security, Auditability, and Compliance in a Decentralised Toolchain'
-date: '2026-03-12T10:00'
+date: '2026-02-24T10:00'
 description: >-
   How OpsChain’s Security, Auditability & Compliance features enforce consistent
   governance, generate immutable records, and simplify audits across all
@@ -160,5 +160,9 @@ Enterprises move faster, and safer, because governance is no longer an obstacle.
 > OpsChain unifies security, auditability, and compliance across all operational systems, enabling continuous trust in every change.
 
 ---
-### Explore the full series  
-This blog is part of the Series [**Modern Operations without Friction**](/blog/modern-operations-without-friction). Read more to see how OpsChain can simplify your enterprise operations today.
+### Modern Operations Without the Friction — Part 6 of 10
+
+This article is part of the [**Modern Operations Without the Friction**](/blog/modern-operations-without-friction) series, exploring how OpsChain helps enterprises unify people, processes, and technology under one governed automation platform.
+
+**Previous:** [AI-Governed Operations](/blog/ai-governed-operations) (Part 5 of 10)  
+**Next:** [Platform Engineering and Operational Maturity](/blog/platform-engineering-and-operational-maturity) (Part 7 of 10)
