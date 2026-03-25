@@ -171,10 +171,12 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 6. Social Proof */}
-      <AnimatedSection>
-        <SocialProof />
-      </AnimatedSection>
+      {/* 6. Social Proof (controlled by NEXT_PUBLIC_SHOW_TESTIMONIALS) */}
+      {process.env.NEXT_PUBLIC_SHOW_TESTIMONIALS !== 'false' && (
+        <AnimatedSection>
+          <SocialProof />
+        </AnimatedSection>
+      )}
 
       {/* 7. Comparison Table (controlled by NEXT_PUBLIC_SHOW_COMPARISON_TABLE) */}
       {process.env.NEXT_PUBLIC_SHOW_COMPARISON_TABLE === 'true' && (

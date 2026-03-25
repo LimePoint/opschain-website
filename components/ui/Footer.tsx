@@ -13,8 +13,8 @@ const footerLinks = {
     title: 'Resources',
     items: [
       { label: 'Blog', href: '/blog/' },
-      { label: 'Datasheets', href: '/resources/' },
-      { label: 'Webinars', href: '/webinars/' },
+      ...(process.env.NEXT_PUBLIC_SHOW_DATASHEETS !== 'false' ? [{ label: 'Datasheets', href: '/resources/' }] : []),
+      ...(process.env.NEXT_PUBLIC_SHOW_WEBINARS !== 'false' ? [{ label: 'Webinars', href: '/webinars/' }] : []),
     ],
   },
   docs: {

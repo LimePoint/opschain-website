@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { getAllWebinars, getWebinar } from '@/lib/content'
+import { getAllWebinars, getWebinar, isWebinarsVisible } from '@/lib/content'
 import { EventSchema } from '@/components/seo/JsonLd'
 import { GatedAssetForm } from '@/components/forms/GatedAssetForm'
 import { PageTransition } from '@/components/PageTransition'
@@ -15,6 +15,7 @@ interface PageProps {
 export const dynamicParams = false
 
 export async function generateStaticParams() {
+  if (!isWebinarsVisible()) return [{ slug: '__placeholder__' }]
   const all = getAllWebinars()
   if (all.length === 0) return [{ slug: '__placeholder__' }]
   return all.map((w) => ({ slug: w.slug }))
@@ -29,6 +30,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function WebinarPage({ params }: PageProps) {
   const { slug } = await params
+  if (!isWebinarsVisible()) notFound()
   const w = getWebinar(slug)
   if (!w) notFound()
 

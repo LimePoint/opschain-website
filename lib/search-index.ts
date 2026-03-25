@@ -1,4 +1,4 @@
-import { getAllBlogPosts, getAllDatasheets, getAllWebinars } from './content'
+import { getAllBlogPosts, getAllDatasheets, getAllWebinars, isDatasheetsVisible, isWebinarsVisible } from './content'
 
 export interface SearchEntry {
   title: string
@@ -103,23 +103,27 @@ export function buildSearchIndex(): SearchEntry[] {
     })
   }
 
-  for (const ds of getAllDatasheets()) {
-    entries.push({
-      title: ds.title,
-      description: ds.description,
-      url: `/resources/${ds.slug}/`,
-      type: 'datasheet',
-    })
+  if (isDatasheetsVisible()) {
+    for (const ds of getAllDatasheets()) {
+      entries.push({
+        title: ds.title,
+        description: ds.description,
+        url: `/resources/${ds.slug}/`,
+        type: 'datasheet',
+      })
+    }
   }
 
-  for (const w of getAllWebinars()) {
-    entries.push({
-      title: w.title,
-      description: w.description,
-      url: `/webinars/${w.slug}/`,
-      type: 'webinar',
-      date: w.date,
-    })
+  if (isWebinarsVisible()) {
+    for (const w of getAllWebinars()) {
+      entries.push({
+        title: w.title,
+        description: w.description,
+        url: `/webinars/${w.slug}/`,
+        type: 'webinar',
+        date: w.date,
+      })
+    }
   }
 
   return entries

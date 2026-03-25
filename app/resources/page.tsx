@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { getAllDatasheets } from '@/lib/content'
+import { notFound } from 'next/navigation'
+import { getAllDatasheets, isDatasheetsVisible } from '@/lib/content'
 import { PageTransition } from '@/components/PageTransition'
 
 export const metadata: Metadata = {
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
 }
 
 export default function ResourcesIndex() {
+  if (!isDatasheetsVisible()) notFound()
   const datasheets = getAllDatasheets()
 
   return (

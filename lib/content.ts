@@ -23,6 +23,18 @@ function isDraftVisible(): boolean {
   return value !== undefined && value !== null && value.toLowerCase() === 'true'
 }
 
+export function isDatasheetsVisible(): boolean {
+  const value = process.env.NEXT_PUBLIC_SHOW_DATASHEETS
+  // Default to true — datasheets are shown unless explicitly set to 'false'
+  return value === undefined || value === null || value.toLowerCase() !== 'false'
+}
+
+export function isWebinarsVisible(): boolean {
+  const value = process.env.NEXT_PUBLIC_SHOW_WEBINARS
+  // Default to true — webinars are shown unless explicitly set to 'false'
+  return value === undefined || value === null || value.toLowerCase() !== 'false'
+}
+
 function filterDraft<T extends { draft: boolean }>(items: T[]): T[] {
   if (isDraftVisible()) {
     // console.log("Returning entire list")

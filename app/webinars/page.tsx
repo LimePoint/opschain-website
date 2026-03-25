@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { getAllWebinars } from '@/lib/content'
+import { notFound } from 'next/navigation'
+import { getAllWebinars, isWebinarsVisible } from '@/lib/content'
 import { CountdownTimer } from '@/components/CountdownTimer'
 import { PageTransition } from '@/components/PageTransition'
 
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
 }
 
 export default function WebinarsIndex() {
+  if (!isWebinarsVisible()) notFound()
   const webinars = getAllWebinars()
   const upcoming = webinars.filter((w) => w.status === 'upcoming')
   const past = webinars.filter((w) => w.status === 'past')

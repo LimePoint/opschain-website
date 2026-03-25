@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { getAllDatasheets, getDatasheet } from '@/lib/content'
+import { getAllDatasheets, getDatasheet, isDatasheetsVisible } from '@/lib/content'
 import { GatedAssetForm } from '@/components/forms/GatedAssetForm'
 import { PageTransition } from '@/components/PageTransition'
 
@@ -12,6 +12,7 @@ interface PageProps {
 export const dynamicParams = false
 
 export async function generateStaticParams() {
+  if (!isDatasheetsVisible()) return [{ slug: '__placeholder__' }]
   const all = getAllDatasheets()
   if (all.length === 0) return [{ slug: '__placeholder__' }]
   return all.map((ds) => ({ slug: ds.slug }))
@@ -29,6 +30,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function DatasheetPage({ params }: PageProps) {
   const { slug } = await params
+  if (!isDatasheetsVisible()) notFound()
   const ds = getDatasheet(slug)
   if (!ds) notFound()
 

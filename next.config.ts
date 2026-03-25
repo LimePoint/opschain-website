@@ -33,6 +33,9 @@ const nextConfig: NextConfig = {
   env: {
     NEXT_PUBLIC_SHOW_DRAFTS: process.env.NEXT_PUBLIC_SHOW_DRAFTS || 'false',
     NEXT_PUBLIC_SHOW_COMPARISON_TABLE: process.env.NEXT_PUBLIC_SHOW_COMPARISON_TABLE || 'false',
+    NEXT_PUBLIC_SHOW_DATASHEETS: process.env.NEXT_PUBLIC_SHOW_DATASHEETS || 'true',
+    NEXT_PUBLIC_SHOW_WEBINARS: process.env.NEXT_PUBLIC_SHOW_WEBINARS || 'true',
+    NEXT_PUBLIC_SHOW_TESTIMONIALS: process.env.NEXT_PUBLIC_SHOW_TESTIMONIALS || 'true',
   },
   webpack: (config) => {
     config.plugins.push(new VeliteWebpackPlugin())
@@ -50,4 +53,7 @@ console.log(`  NEXT_PUBLIC_SHOW_DRAFTS:           ${process.env.NEXT_PUBLIC_SHOW
 console.log(
   `  NEXT_PUBLIC_SHOW_COMPARISON_TABLE:  ${process.env.NEXT_PUBLIC_SHOW_COMPARISON_TABLE || 'false (default)'}`
 )
+console.log(`  NEXT_PUBLIC_SHOW_DATASHEETS:       ${process.env.NEXT_PUBLIC_SHOW_DATASHEETS || 'true (default)'}`)
+console.log(`  NEXT_PUBLIC_SHOW_WEBINARS:         ${process.env.NEXT_PUBLIC_SHOW_WEBINARS || 'true (default)'}`)
+console.log(`  NEXT_PUBLIC_SHOW_TESTIMONIALS:     ${process.env.NEXT_PUBLIC_SHOW_TESTIMONIALS || 'true (default)'}`)
 console.log('------------------------------------')

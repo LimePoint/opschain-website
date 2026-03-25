@@ -54,6 +54,9 @@ The `lib/content.ts` module wraps these imports with accessor functions (filteri
 | `NEXT_PUBLIC_SITE_URL` | Canonical site URL | Used in metadata/OG tags |
 | `NEXT_PUBLIC_SHOW_DRAFTS` | Show draft blog posts | Dev only, default `false` |
 | `NEXT_PUBLIC_SHOW_COMPARISON_TABLE` | Show comparison table on homepage | Default `false` |
+| `NEXT_PUBLIC_SHOW_DATASHEETS` | Show datasheets/resources pages | Default `true` |
+| `NEXT_PUBLIC_SHOW_WEBINARS` | Show webinars pages | Default `true` |
+| `NEXT_PUBLIC_SHOW_TESTIMONIALS` | Show testimonials on homepage | Default `true` |
 | `PORT` | Dev server port | Shell env var only (not `.env.local`) |
 
 `NODE_ENV` is controlled by Next.js automatically — setting it in `.env.local` has no effect.
