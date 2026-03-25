@@ -5,8 +5,8 @@ const footerLinks = {
     title: 'Product',
     items: [
       { label: 'Features', href: '/features/autonomous-agents/' },
-      { label: 'Why OpsChain', href: '/why-opschain/' },
-      { label: 'Solutions', href: '/solutions/utilities-energy/' },
+      { label: 'Our Approach', href: '/our-approach/' },
+      // { label: 'Solutions', href: '/solutions/utilities-energy/' },
     ],
   },
   resources: {

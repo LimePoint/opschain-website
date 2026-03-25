@@ -18,37 +18,37 @@ const tabs: Tab[] = [
   {
     id: 'governed-workflows',
     label: 'Governed Workflows',
-    heading: 'Governed Workflows',
+    heading: 'Every change follows the rules. Automatically.',
     description:
       "Define, enforce, and audit every step of your operational workflows with built-in governance guardrails. Ensure every change follows your organization's policies before it reaches production.",
   },
   {
     id: 'autonomous-agents',
     label: 'Autonomous Agents',
-    heading: 'Autonomous Agents',
+    heading: '24x7 operations. No headcount required.',
     description:
       'Deploy intelligent agents that execute complex operational tasks autonomously — while remaining fully governed and auditable. Free your teams from repetitive toil without sacrificing control.',
   },
   {
     id: 'unified-orchestration',
     label: 'Unified Orchestration',
-    heading: 'Unified Orchestration',
+    heading: 'One control plane. Every tool, team, and environment.',
     description:
       'Coordinate across cloud providers, on-prem infrastructure, and third-party tools from a single control plane. One workflow engine to rule your entire stack.',
   },
   {
     id: 'compliance-audit',
     label: 'Compliance & Audit',
-    heading: 'Compliance & Audit',
+    heading: 'Compliance evidence generated automatically - not assembled at audit time.',
     description:
       'Every action recorded, every decision traceable. Meet SOC 2, ISO 27001, and industry-specific compliance requirements with an immutable, end-to-end audit trail.',
   },
   {
     id: 'pluggable-automation',
     label: 'Pluggable Automation',
-    heading: 'Pluggable Automation',
+    heading: 'Govern the tools you already have.',
     description:
-      'Pluggable automation framework gives you the freedom to integrate any tool, system, or workflow into a single, secure operations ecosystem. Whether you rely on Terraform, Ansible, custom scripts, or emerging technologies, OpsChain is completely tool-agnostic.',
+      "Pluggable automation framework gives you the freedom to integrate any tool, system, or workflow into a single, secure operations ecosystem. OpsChain is completely tool-agnostic. Ansible, Terraform, GitHub Actions, and custom scripts all run inside OpsChain's governed framework. Add auditability to investments you've already made.",
   },
 ]
 

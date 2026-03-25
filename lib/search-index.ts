@@ -11,17 +11,10 @@ export interface SearchEntry {
 
 const sitePages: SearchEntry[] = [
   {
-    title: 'Why OpsChain?',
+    title: 'Our Approach',
     description:
       'Modern enterprises need operations that are intelligent, autonomous, and governed — all in one platform. Discover why OpsChain is the answer.',
-    url: '/why-opschain/',
-    type: 'page',
-  },
-  {
-    title: 'OpsChain vs. The Alternatives',
-    description:
-      'Compare OpsChain against Ansible Automation Platform, ServiceNow ITOM, Automation Anywhere, and Octopus Deploy across key enterprise operations capabilities.',
-    url: '/why-opschain/compare/',
+    url: '/our-approach/',
     type: 'page',
   },
   {

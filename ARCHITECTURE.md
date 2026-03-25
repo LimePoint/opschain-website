@@ -37,7 +37,7 @@ app/                            # Next.js App Router — all page routes
   solutions/                    # 3 vertical landing pages (utilities-energy, banking-finance, telecommunications)
   resources/                    # Datasheet index + /resources/[slug]/ gated downloads
   webinars/                     # Webinar index + /webinars/[slug]/ detail pages
-  why-opschain/                 # Positioning page + /why-opschain/compare/ competitor table
+  our-approach/                 # Positioning page
   book-demo/                    # Demo request form page
   privacy/, terms-of-use/, eula/ # Legal pages
 

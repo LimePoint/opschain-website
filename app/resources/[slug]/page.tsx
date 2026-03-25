@@ -9,8 +9,12 @@ interface PageProps {
   params: Promise<{ slug: string }>
 }
 
+export const dynamicParams = false
+
 export async function generateStaticParams() {
-  return getAllDatasheets().map((ds) => ({ slug: ds.slug }))
+  const all = getAllDatasheets()
+  if (all.length === 0) return [{ slug: '__placeholder__' }]
+  return all.map((ds) => ({ slug: ds.slug }))
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {

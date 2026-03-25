@@ -30,7 +30,7 @@
 |------|--------------|-------------|
 | Homepage | `OpsChain` | `OpsChain \| Enterprise Operations Automation & Governance Platform` |
 | Book Demo | `OpsChain` | `Book a Demo \| OpsChain` |
-| Why OpsChain | `Why OpsChain? \| OpsChain` | Adequate |
+| Our Approach | `Our Approach? \| OpsChain` | Adequate |
 | Features | `OpsChain features \| OpsChain` | Adequate |
 
 **Recommendation:** Add descriptive, keyword-rich titles to every page via frontmatter or component-level `<Head>` tags.
@@ -48,7 +48,7 @@
 
 - Homepage: **No H1 tag**. Hero text is an `<h2>`. Critical SEO violation.
 - Feature pages: All use `###` (H3) as primary heading, creating H1→H3 gap (Docusaurus renders `title` as H1 but content skips H2).
-- Why OpsChain: Uses H4 inside blockquotes for styling, skipping H3.
+- Our Approach: Uses H4 inside blockquotes for styling, skipping H3.
 
 **Recommendation:** Fix homepage to render hero as H1. Restructure feature page content to use H2/H3 properly.
 
@@ -103,7 +103,7 @@ audit trails.
 
 ## Key Pages
 - [Features](/docs/product/features/)
-- [Why OpsChain](/why-opschain)
+- [Our Approach](/our-approach)
 - [Documentation](https://docs.opschain.io)
 - [Book a Demo](/book-demo)
 ```
@@ -117,7 +117,7 @@ Requires Lighthouse/PageSpeed testing. Docusaurus static sites generally perform
 #### Internal Linking — **Weak**
 
 - Feature pages don't link to each other
-- No cross-links from feature pages to why-opschain
+- No cross-links from feature pages to our-approach
 - Homepage features for Observability and Analytics have **no links at all**
 - Why-opschain links only to book-demo, not to any feature pages
 
@@ -314,7 +314,7 @@ No partner page, no integrations page, no ecosystem content. Tool logos (Ansible
 
 #### Current State — **Weak**
 
-**Current Navbar:** Logo | Why OpsChain | Features ▾ | Documentation | [Book Demo]
+**Current Navbar:** Logo | Our Approach | Features ▾ | Documentation | [Book Demo]
 
 **Issues:**
 1. Features dropdown parent (`href="#"`) is not clickable — should link to `/docs/product/features/`
@@ -355,10 +355,10 @@ The site never clearly states what OpsChain *is* in a single, plain-language sen
 
 No comparison to alternatives. No "OpsChain vs." content. The site doesn't address:
 - How OpsChain differs from ServiceNow Change Management
-- Why OpsChain over Jenkins/Ansible/Terraform pipelines alone
+- Our Approach over Jenkins/Ansible/Terraform pipelines alone
 - What OpsChain adds beyond custom-scripted change tooling
 
-**Recommendation:** Create a `/why-opschain/compare` page with comparison tables for each alternative. Target search terms like "ServiceNow change management alternative" and "GitOps change governance."
+**Recommendation:** Create a `/our-approach/compare` page with comparison tables for each alternative. Target search terms like "ServiceNow change management alternative" and "GitOps change governance."
 
 #### Vertical Messaging — **Missing**
 
@@ -426,7 +426,7 @@ Changes requiring no rebuild — meta tags, schema, static files, config changes
 | 13 | Add links to Observability and Analytics feature cards on homepage | UX/Conversion | 10 min |
 | 14 | Fix Features dropdown parent link (`href="#"` → `/docs/product/features/`) | UX | 5 min |
 | 15 | Add `title` attribute to Airtable iframe on book-demo (accessibility) | WCAG | 5 min |
-| 16 | Remove duplicate paragraph on Why OpsChain page | Content quality | 5 min |
+| 16 | Remove duplicate paragraph on Our Approach page | Content quality | 5 min |
 | 17 | Add OG social sharing image (1200×630) to replace nav logo | Social sharing | 1 hr |
 
 ---
@@ -476,8 +476,8 @@ Changes requiring no rebuild — meta tags, schema, static files, config changes
 
 ```
 /                                          Homepage
-├── /why-opschain                          Why OpsChain (positioning)
-│   └── /why-opschain/compare              Competitive comparison (vs ServiceNow, CI/CD)
+├── /our-approach                          Our Approach (positioning)
+│   └── /our-approach/compare              Competitive comparison (vs ServiceNow, CI/CD)
 │
 ├── /features/                             Features overview
 │   ├── /features/autonomous-agents        Autonomous Agents
@@ -521,7 +521,7 @@ Changes requiring no rebuild — meta tags, schema, static files, config changes
 **Navigation restructure:**
 
 ```
-Logo | Why OpsChain | Features ▾ | Solutions ▾ | Resources ▾ | Integrations | Docs↗ | [Book Demo]
+Logo | Our Approach | Features ▾ | Solutions ▾ | Resources ▾ | Integrations | Docs↗ | [Book Demo]
 ```
 
 - **Features ▾**: Autonomous Agents, Governed Intelligence, Workflow Orchestration, Security & Compliance, Pluggable Automation, Observability, Analytics
@@ -613,7 +613,7 @@ Given the multi-region footprint (ANZ, Europe, USA, Japan, Singapore):
 | Technical specifics | Generic claims | Weak | Add architecture details, tool names |
 | CTA consistency | Different wording per page | Adequate | Standardise CTA text |
 
-### Why OpsChain (`/why-opschain`)
+### Our Approach (`/our-approach`)
 
 | Element | Current State | Rating | Action |
 |---------|--------------|--------|--------|

@@ -8,6 +8,7 @@ speakers:
   - Goran Stankovski, CEO, LimePoint
 zoomLink: ""
 recordingUrl: ""
+draft: false
 ---
 
 ## Change Management in Regulated Industries

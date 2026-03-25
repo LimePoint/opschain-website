@@ -59,7 +59,7 @@ app/                      # Next.js App Router pages
   solutions/              # 3 vertical landing pages (utilities-energy, banking-finance, telecommunications)
   resources/              # Datasheet index + [slug] gated download pages
   webinars/               # Webinar index + [slug] pages (upcoming/past/on-demand)
-  why-opschain/           # Positioning page + /compare competitor table
+  our-approach/           # Positioning page + /compare competitor table
   book-demo/              # Demo request form (Salesforce Web-to-Lead)
   privacy/                # Privacy policy
   terms-of-use/           # Terms of use
@@ -167,8 +167,7 @@ Feature pages, solution pages, and other static pages are React components under
 |---|---|
 | Feature pages | `app/features/<feature-name>/page.tsx` |
 | Solution pages | `app/solutions/<solution-name>/page.tsx` |
-| Why OpsChain | `app/why-opschain/page.tsx` |
-| Competitor comparison | `app/why-opschain/compare/page.tsx` |
+| Our Approach | `app/our-approach/page.tsx` |
 | Homepage sections | `app/page.tsx` (references components in `components/`) |
 | Legal pages | `app/privacy/page.tsx`, `app/terms-of-use/page.tsx`, `app/eula/page.tsx` |
 

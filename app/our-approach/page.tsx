@@ -4,19 +4,18 @@ import { CTAButton } from '@/components/analytics/CTAButton'
 import { PageTransition } from '@/components/PageTransition'
 
 export const metadata: Metadata = {
-  title: 'Why OpsChain?',
+  title: 'Our Approach',
   description:
     'Modern enterprises need operations that are intelligent, autonomous, and governed — all in one platform. Discover why OpsChain is the answer.',
 }
 
-export default function WhyOpsChainPage() {
+export default function OurApproachPage() {
   return (
     <PageTransition>
       <div className='mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8'>
-        <h1 className='text-4xl font-bold font-heading text-gray-900'>Why OpsChain?</h1>
+        {/*<h1 className='text-4xl font-bold font-heading text-gray-900'>Our Approach</h1>*/}
         <p className='mt-4 text-lg text-gray-600'>
-          Because modern enterprises need operations that are intelligent, autonomous, and governed — all in one
-          platform.
+          Modern enterprises need operations that are intelligent, autonomous, and governed — all in one platform.
         </p>
 
         <section className='mt-12'>
@@ -110,14 +109,6 @@ export default function WhyOpsChainPage() {
           <p className='mt-8 text-center text-lg font-semibold italic text-gray-900'>
             Intelligent. Autonomous. Governed.
           </p>
-        </section>
-
-        <section className='mt-12'>
-          <h2 className='text-2xl font-semibold font-heading text-gray-900'>How Does OpsChain Compare?</h2>
-          <p className='mt-4 text-gray-700'>
-            See how OpsChain stacks up against traditional automation tools, ITSM platforms, and RPA solutions.
-          </p>
-          <CTAButton href='/why-opschain/compare/' label='View Comparison' variant='secondary' className='mt-4' />
         </section>
 
         <section className='mt-12 text-center'>

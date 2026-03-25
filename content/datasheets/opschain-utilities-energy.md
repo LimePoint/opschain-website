@@ -10,6 +10,7 @@ highlights:
   - AI-governed change pipelines for critical infrastructure
 downloadUrl: ""
 available: false
+draft: false
 ---
 
 ## OpsChain for Utilities & Energy

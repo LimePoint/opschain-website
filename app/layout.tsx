@@ -31,6 +31,7 @@ export const metadata: Metadata = {
   description:
     'OpsChain is an enterprise operations platform that automates infrastructure change management with AI-powered agents, governed workflows, and end-to-end audit trails.',
   metadataBase: new URL(siteUrl),
+  alternates: { canonical: '/' },
   openGraph: {
     type: 'website',
     locale: 'en_US',

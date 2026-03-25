@@ -10,6 +10,7 @@ highlights:
   - Enterprise-grade security and compliance controls
 downloadUrl: ""
 available: false
+draft: false
 ---
 
 ## OpsChain Platform Overview

@@ -12,8 +12,12 @@ interface PageProps {
   params: Promise<{ slug: string }>
 }
 
+export const dynamicParams = false
+
 export async function generateStaticParams() {
-  return getAllWebinars().map((w) => ({ slug: w.slug }))
+  const all = getAllWebinars()
+  if (all.length === 0) return [{ slug: '__placeholder__' }]
+  return all.map((w) => ({ slug: w.slug }))
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {

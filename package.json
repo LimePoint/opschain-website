@@ -3,8 +3,8 @@
     "version": "4.2.AI",
     "private": true,
     "scripts": {
-        "dev": "next dev --port ${PORT:-3000}",
-        "build": "next build",
+        "dev": "rm -rf .next && next dev --port ${PORT:-3000}",
+        "build": "rm -rf .next && next build",
         "postbuild": "next-sitemap",
         "start": "next start",
         "lint": "next lint",

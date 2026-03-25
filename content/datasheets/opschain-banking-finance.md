@@ -8,8 +8,9 @@ highlights:
   - Immutable audit logs for regulatory evidence
   - Governed automation across multi-cloud banking environments
   - Segregation of duties enforcement with AI oversight
-downloadUrl: ""
-available: false
+downloadUrl: "https://file-examples.com/wp-content/storage/2017/10/file-sample_150kB.pdf"
+available: true
+draft: false
 ---
 
 ## OpsChain for Banking & Financial Services

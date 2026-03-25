@@ -99,7 +99,7 @@ function useScrolled(threshold: number) {
 
 /**
  * Returns true when `pathname` starts with the given `href`, handling
- * trailing-slash variations. For exact matches (e.g. `/why-opschain/`) we
+ * trailing-slash variations. For exact matches (e.g. `/our-approach/`) we
  * also accept the version without trailing slash.
  */
 function isActive(pathname: string, href: string): boolean {
@@ -265,13 +265,13 @@ export function Navbar() {
         {/* Desktop nav */}
         <div className='hidden items-center gap-1 lg:flex'>
           <Link
-            href='/why-opschain/'
+            href='/our-approach/'
             className={clsx(
               'px-3 py-2 text-sm font-medium transition-colors',
-              isActive(pathname, '/why-opschain/') ? 'text-primary' : 'text-gray-700 hover:text-primary'
+              isActive(pathname, '/our-approach/') ? 'text-primary' : 'text-gray-700 hover:text-primary'
             )}
           >
-            Why OpsChain
+            Our Approach
           </Link>
           <DropdownMenu
             dropdown={{ label: 'Features', items: featureItems }}
@@ -332,14 +332,14 @@ export function Navbar() {
           >
             <div className='space-y-1 px-4 py-4'>
               <Link
-                href='/why-opschain/'
+                href='/our-approach/'
                 onClick={closeMobile}
                 className={clsx(
                   'block rounded-md px-3 py-2 text-sm font-medium',
-                  isActive(pathname, '/why-opschain/') ? 'bg-primary/5 text-primary' : 'text-gray-700 hover:bg-gray-50'
+                  isActive(pathname, '/our-approach/') ? 'bg-primary/5 text-primary' : 'text-gray-700 hover:bg-gray-50'
                 )}
               >
-                Why OpsChain
+                Our Approach
               </Link>
 
               <div className='px-3 py-2 text-xs font-semibold uppercase tracking-wider text-gray-400'>Features</div>

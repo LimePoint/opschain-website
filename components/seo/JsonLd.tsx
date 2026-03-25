@@ -14,7 +14,9 @@ export function OrganizationSchema() {
       data={{
         '@context': 'https://schema.org',
         '@type': 'Organization',
+        '@id': 'https://www.opschain.io/#organization',
         name: 'LimePoint',
+        legalName: 'LimePoint Pty Ltd',
         url: 'https://limepoint.com',
         logo: `${siteUrl}/img/opschain-nav-logo.png`,
         sameAs: ['https://www.linkedin.com/company/limepoint/', 'https://github.com/LimePoint'],
@@ -29,20 +31,30 @@ export function SoftwareApplicationSchema() {
       data={{
         '@context': 'https://schema.org',
         '@type': 'SoftwareApplication',
+        '@id': 'https://www.opschain.io/#software',
         name: 'OpsChain',
         applicationCategory: 'BusinessApplication',
+        applicationSubCategory: 'IT Operations Automation',
         operatingSystem: 'Cloud, On-Premise, Hybrid',
         description:
-          'Enterprise operations automation and governance platform with AI-powered agents, governed workflows, and end-to-end audit trails.',
+          'OpsChain is an enterprise operations automation and governance platform with AI-powered agents, governed workflows, and end-to-end audit trails. Designed for regulated enterprises in utilities, banking, and telecommunications.',
         url: siteUrl,
         offers: {
           '@type': 'Offer',
-          price: '0',
           priceCurrency: 'USD',
-          description: 'Contact for enterprise pricing',
+          priceSpecification: {
+            '@type': 'PriceSpecification',
+            description: 'Enterprise licensing — contact for pricing',
+          },
+          seller: {
+            '@type': 'Organization',
+            name: 'LimePoint',
+            url: 'https://www.limepoint.com',
+          },
         },
         publisher: {
           '@type': 'Organization',
+          '@id': 'https://www.opschain.io/#organization',
           name: 'LimePoint',
         },
       }}

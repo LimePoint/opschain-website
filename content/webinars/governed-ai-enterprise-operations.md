@@ -8,6 +8,7 @@ speakers:
   - Goran Stankovski, CEO, LimePoint
 zoomLink: ""
 recordingUrl: ""
+draft: false
 ---
 
 ## Governed AI in Enterprise Operations: From Concept to Production

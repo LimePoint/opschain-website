@@ -27,7 +27,14 @@ export default function ResourcesIndex() {
               href={`/resources/${ds.slug}/`}
               className='group rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md'
             >
-              <h2 className='text-lg font-semibold font-heading text-gray-900 group-hover:text-primary'>{ds.title}</h2>
+              <div className='flex items-center gap-2'>
+                <h2 className='text-lg font-semibold font-heading text-gray-900 group-hover:text-primary'>
+                  {ds.title}
+                </h2>
+                {ds.draft && (
+                  <span className='rounded bg-yellow-100 px-2 py-0.5 text-xs font-medium text-yellow-800'>Draft</span>
+                )}
+              </div>
               <p className='mt-2 text-sm text-gray-600'>{ds.description}</p>
               {ds.highlights.length > 0 && (
                 <ul className='mt-3 space-y-1'>

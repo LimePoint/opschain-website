@@ -10,6 +10,7 @@ highlights:
   - Compliance-ready audit trails for telecom regulators
 downloadUrl: ""
 available: false
+draft: false
 ---
 
 ## OpsChain for Telecommunications

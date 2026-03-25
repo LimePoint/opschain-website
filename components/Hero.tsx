@@ -82,7 +82,7 @@ export function Hero() {
           transition={{ duration: shouldReduce ? 0 : 0.5, delay: shouldReduce ? 0 : 1.5 }}
         >
           <CTAButton href='/book-demo/' label='Book a Demo' variant='primary' />
-          <CTAButton href='/why-opschain/' label='Learn More' variant='secondary' />
+          <CTAButton href='/our-approach/' label='Learn More' variant='secondary' />
         </motion.div>
 
         <motion.p

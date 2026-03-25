@@ -16,7 +16,9 @@ interface PageProps {
 export const dynamicParams = false
 
 export async function generateStaticParams() {
-  return getAllBlogSlugs().map((slug) => ({ slug }))
+  const slugs = getAllBlogSlugs()
+  if (slugs.length === 0) return [{ slug: '__placeholder__' }]
+  return slugs.map((slug) => ({ slug }))
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {

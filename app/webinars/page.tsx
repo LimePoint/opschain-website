@@ -46,9 +46,16 @@ export default function WebinarsIndex() {
                       })}
                     </time>
                   </div>
-                  <h3 className='mt-2 text-xl font-semibold font-heading text-gray-900 group-hover:text-primary'>
-                    {w.title}
-                  </h3>
+                  <div className='mt-2 flex items-center gap-2'>
+                    <h3 className='text-xl font-semibold font-heading text-gray-900 group-hover:text-primary'>
+                      {w.title}
+                    </h3>
+                    {w.draft && (
+                      <span className='rounded bg-yellow-100 px-2 py-0.5 text-xs font-medium text-yellow-800'>
+                        Draft
+                      </span>
+                    )}
+                  </div>
                   <p className='mt-2 text-gray-600'>{w.description}</p>
                   {w.speakers.length > 0 && (
                     <p className='mt-2 text-sm text-gray-500'>Speakers: {w.speakers.join(', ')}</p>
@@ -72,9 +79,16 @@ export default function WebinarsIndex() {
                   href={`/webinars/${w.slug}/`}
                   className='group block rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md'
                 >
-                  <h3 className='text-xl font-semibold font-heading text-gray-900 group-hover:text-primary'>
-                    {w.title}
-                  </h3>
+                  <div className='flex items-center gap-2'>
+                    <h3 className='text-xl font-semibold font-heading text-gray-900 group-hover:text-primary'>
+                      {w.title}
+                    </h3>
+                    {w.draft && (
+                      <span className='rounded bg-yellow-100 px-2 py-0.5 text-xs font-medium text-yellow-800'>
+                        Draft
+                      </span>
+                    )}
+                  </div>
                   <p className='mt-2 text-gray-600'>{w.description}</p>
                   <span className='mt-3 inline-block text-sm font-medium text-primary'>Watch now &rarr;</span>
                 </Link>
@@ -95,7 +109,14 @@ export default function WebinarsIndex() {
                 >
                   <div className='flex items-center justify-between'>
                     <div>
-                      <h3 className='text-lg font-semibold text-gray-900 group-hover:text-primary'>{w.title}</h3>
+                      <div className='flex items-center gap-2'>
+                        <h3 className='text-lg font-semibold text-gray-900 group-hover:text-primary'>{w.title}</h3>
+                        {w.draft && (
+                          <span className='rounded bg-yellow-100 px-2 py-0.5 text-xs font-medium text-yellow-800'>
+                            Draft
+                          </span>
+                        )}
+                      </div>
                       <p className='mt-1 text-sm text-gray-500'>
                         {new Date(w.date).toLocaleDateString('en-US', {
                           year: 'numeric',

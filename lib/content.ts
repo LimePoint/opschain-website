@@ -10,12 +10,23 @@ export function getAuthor(name: string): Author | undefined {
   return authors[name]
 }
 
-const showDrafts = process.env.NEXT_PUBLIC_SHOW_DRAFTS === 'true'
+function isDraftVisible(): boolean {
+  const value = process.env.NEXT_PUBLIC_SHOW_DRAFTS
+  // Default to false — drafts are hidden unless explicitly set to 'true'
+  return value !== undefined && value !== null && value.toLowerCase() === 'true'
+}
 
-export function getAllBlogPosts({ includeDrafts = showDrafts } = {}): BlogPost[] {
-  return posts
-    .filter((post) => includeDrafts || !post.draft)
-    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+function filterDraft<T extends { draft: boolean }>(items: T[]): T[] {
+  if (isDraftVisible()) {
+    // console.log("Returning entire list")
+    return items
+  }
+  // console.log("Returning filtered list")
+  return items.filter((item) => !item.draft)
+}
+
+export function getAllBlogPosts(): BlogPost[] {
+  return filterDraft(posts).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
 }
 
 export function getBlogPost(slug: string): BlogPost | undefined {
@@ -27,19 +38,19 @@ export function getAllBlogSlugs(): string[] {
 }
 
 export function getAllDatasheets(): Datasheet[] {
-  return datasheets
+  return filterDraft(datasheets)
 }
 
 export function getDatasheet(slug: string): Datasheet | undefined {
-  return datasheets.find((ds) => ds.slug === slug)
+  return getAllDatasheets().find((ds) => ds.slug === slug)
 }
 
 export function getAllWebinars(): Webinar[] {
-  return webinars.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+  return filterDraft(webinars).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
 }
 
 export function getWebinar(slug: string): Webinar | undefined {
-  return webinars.find((w) => w.slug === slug)
+  return getAllWebinars().find((w) => w.slug === slug)
 }
 
 export function getAllTags(): string[] {

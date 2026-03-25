@@ -10,6 +10,7 @@ highlights:
   - Pluggable automation framework vs. proprietary scripting
 downloadUrl: ""
 available: false
+draft: false
 ---
 
 ## OpsChain vs. ServiceNow Change Management

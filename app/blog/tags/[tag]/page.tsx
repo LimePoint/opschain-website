@@ -10,7 +10,9 @@ interface PageProps {
 export const dynamicParams = false
 
 export async function generateStaticParams() {
-  return getAllTags().map((tag) => ({ tag: tagToSlug(tag) }))
+  const tags = getAllTags()
+  if (tags.length === 0) return [{ tag: '__placeholder__' }]
+  return tags.map((tag) => ({ tag: tagToSlug(tag) }))
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
