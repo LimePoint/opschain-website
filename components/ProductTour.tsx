@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image'
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion'
 
 interface Tab {
@@ -8,43 +9,49 @@ interface Tab {
   label: string
   heading: string
   description: string
+  image: string
 }
 
 const tabs: Tab[] = [
   {
     id: 'governed-workflows',
     label: 'Governed Workflows',
-    heading: 'Governed Workflows', // TODO: finalize heading copy
+    heading: 'Governed Workflows',
     description:
-      "Define, enforce, and audit every step of your operational workflows with built-in governance guardrails. Ensure every change follows your organization's policies before it reaches production.", // TODO: finalize description copy
+      "Define, enforce, and audit every step of your operational workflows with built-in governance guardrails. Ensure every change follows your organization's policies before it reaches production.",
+    image: '/img/product-tour/governed-workflows.svg',
   },
   {
     id: 'autonomous-agents',
     label: 'Autonomous Agents',
-    heading: 'Autonomous Agents', // TODO: finalize heading copy
+    heading: 'Autonomous Agents',
     description:
-      'Deploy intelligent agents that execute complex operational tasks autonomously — while remaining fully governed and auditable. Free your teams from repetitive toil without sacrificing control.', // TODO: finalize description copy
+      'Deploy intelligent agents that execute complex operational tasks autonomously — while remaining fully governed and auditable. Free your teams from repetitive toil without sacrificing control.',
+    image: '/img/product-tour/autonomous-agents.svg',
   },
   {
     id: 'unified-orchestration',
     label: 'Unified Orchestration',
-    heading: 'Unified Orchestration', // TODO: finalize heading copy
+    heading: 'Unified Orchestration',
     description:
-      'Coordinate across cloud providers, on-prem infrastructure, and third-party tools from a single control plane. One workflow engine to rule your entire stack.', // TODO: finalize description copy
+      'Coordinate across cloud providers, on-prem infrastructure, and third-party tools from a single control plane. One workflow engine to rule your entire stack.',
+    image: '/img/product-tour/unified-orchestration.svg',
   },
   {
     id: 'compliance-audit',
     label: 'Compliance & Audit',
-    heading: 'Compliance & Audit', // TODO: finalize heading copy
+    heading: 'Compliance & Audit',
     description:
-      'Every action recorded, every decision traceable. Meet SOC 2, ISO 27001, and industry-specific compliance requirements with an immutable, end-to-end audit trail.', // TODO: finalize description copy
+      'Every action recorded, every decision traceable. Meet SOC 2, ISO 27001, and industry-specific compliance requirements with an immutable, end-to-end audit trail.',
+    image: '/img/product-tour/compliance-audit.svg',
   },
   {
     id: 'pluggable-automation',
     label: 'Pluggable Automation',
-    heading: 'Pluggable Automation', // TODO: finalize heading copy
+    heading: 'Pluggable Automation',
     description:
-      'Pluggable automation framework gives you the freedom to integrate any tool, system, or workflow into a single, secure operations ecosystem. Whether you rely on Terraform, Ansible, custom scripts, or emerging technologies, OpsChain is completely tool-agnostic.', // TODO: finalize description copy
+      'Pluggable automation framework gives you the freedom to integrate any tool, system, or workflow into a single, secure operations ecosystem. Whether you rely on Terraform, Ansible, custom scripts, or emerging technologies, OpsChain is completely tool-agnostic.',
+    image: '/img/product-tour/pluggable-automation.svg',
   },
 ]
 
@@ -105,9 +112,8 @@ export function ProductTour() {
         >
           <h3 className='text-2xl md:text-3xl font-heading font-semibold mb-4'>{activeContent.heading}</h3>
           <p className='text-gray-600 font-body mb-8 max-w-2xl'>{activeContent.description}</p>
-          {/* TODO: add product screenshot */}
-          <div className='w-full aspect-video bg-gray-100 rounded-xl flex items-center justify-center text-gray-400 font-mono text-sm border border-gray-200'>
-            {/* TODO: add product screenshot */}
+          <div className='w-full aspect-video relative rounded-xl overflow-hidden border border-gray-200'>
+            <Image src={activeContent.image} alt={activeContent.heading} fill className='object-cover' />
           </div>
         </motion.div>
       </AnimatePresence>
