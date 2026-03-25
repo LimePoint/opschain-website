@@ -10,7 +10,7 @@
     "lint": "next lint",
     "prettier:write": "prettier --write .",
     "prettier:check": "prettier --check .",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "dependencies": {
     "clsx": "^2.1.1",
