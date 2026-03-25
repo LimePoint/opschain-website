@@ -1,11 +1,12 @@
 'use client'
 
-import { useCallback, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion'
 
 const IMAGE_BASE = '/img/product-tour'
 const IMAGE_EXTENSIONS = ['svg', 'png', 'jpg', 'webp']
+const AUTO_CYCLE_INTERVAL = 8000 // ms between auto-advancing tabs
 
 interface Tab {
   id: string
@@ -66,6 +67,25 @@ function TourImage({ id, alt }: { id: string; alt: string }) {
 export function ProductTour() {
   const [activeTab, setActiveTab] = useState(tabs[0].id)
   const shouldReduce = useReducedMotion()
+  const pausedUntil = useRef(0)
+
+  // Auto-cycle through tabs
+  useEffect(() => {
+    const timer = setInterval(() => {
+      if (Date.now() < pausedUntil.current) return
+      setActiveTab((current) => {
+        const idx = tabs.findIndex((t) => t.id === current)
+        return tabs[(idx + 1) % tabs.length].id
+      })
+    }, AUTO_CYCLE_INTERVAL)
+    return () => clearInterval(timer)
+  }, [])
+
+  // Manual tab click pauses auto-cycle briefly to avoid jarring switches
+  const handleTabClick = useCallback((id: string) => {
+    pausedUntil.current = Date.now() + AUTO_CYCLE_INTERVAL * 3
+    setActiveTab(id)
+  }, [])
 
   const activeContent = tabs.find((t) => t.id === activeTab)!
 
@@ -76,7 +96,7 @@ export function ProductTour() {
         {tabs.map((tab) => (
           <button
             key={tab.id}
-            onClick={() => setActiveTab(tab.id)}
+            onClick={() => handleTabClick(tab.id)}
             className={`relative px-6 py-3 text-sm font-heading font-medium transition-colors ${
               activeTab === tab.id ? 'text-primary' : 'text-gray-500 hover:text-gray-700'
             }`}
@@ -98,7 +118,7 @@ export function ProductTour() {
         {tabs.map((tab) => (
           <button
             key={tab.id}
-            onClick={() => setActiveTab(tab.id)}
+            onClick={() => handleTabClick(tab.id)}
             className={`w-full text-left px-4 py-3 rounded-lg text-sm font-heading font-medium transition-colors ${
               activeTab === tab.id ? 'bg-primary text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
             }`}
