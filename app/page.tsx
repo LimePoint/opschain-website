@@ -176,20 +176,22 @@ export default function HomePage() {
         <SocialProof />
       </AnimatedSection>
 
-      {/* 7. Comparison Table */}
-      <section className='bg-gray-50 py-16 sm:py-20'>
-        <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
-          <AnimatedSection>
-            <div className='text-center mb-8'>
-              <h2 className='text-3xl font-bold font-heading text-gray-900'>How OpsChain Compares</h2>
-              <p className='mt-4 text-lg text-gray-600'>See how OpsChain stacks up against the alternatives.</p>
-            </div>
-          </AnimatedSection>
-          <AnimatedSection delay={0.2}>
-            <ComparisonTable />
-          </AnimatedSection>
-        </div>
-      </section>
+      {/* 7. Comparison Table (controlled by NEXT_PUBLIC_SHOW_COMPARISON_TABLE) */}
+      {process.env.NEXT_PUBLIC_SHOW_COMPARISON_TABLE === 'true' && (
+        <section className='bg-gray-50 py-16 sm:py-20'>
+          <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
+            <AnimatedSection>
+              <div className='text-center mb-8'>
+                <h2 className='text-3xl font-bold font-heading text-gray-900'>How OpsChain Compares</h2>
+                <p className='mt-4 text-lg text-gray-600'>See how OpsChain stacks up against the alternatives.</p>
+              </div>
+            </AnimatedSection>
+            <AnimatedSection delay={0.2}>
+              <ComparisonTable />
+            </AnimatedSection>
+          </div>
+        </section>
+      )}
 
       {/* 8. CTA Banner */}
       <CTABanner />
