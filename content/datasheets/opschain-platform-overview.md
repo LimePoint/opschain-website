@@ -1,6 +1,6 @@
 ---
 title: OpsChain Platform Overview
-description: A comprehensive overview of the OpsChain enterprise operations automation and governance platform — capabilities, architecture, and deployment options.
+description: A comprehensive overview of the OpsChain enterprise operations automation and governance platform, capabilities, architecture, and deployment options.
 slug: opschain-platform-overview
 highlights:
   - AI-powered autonomous agents for 24x7 operations

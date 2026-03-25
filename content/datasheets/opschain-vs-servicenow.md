@@ -1,6 +1,6 @@
 ---
 title: "OpsChain vs. ServiceNow Change Management"
-description: A comparison of OpsChain and ServiceNow for enterprise change management — governance, automation, and real-world execution.
+description: A comparison of OpsChain and ServiceNow for enterprise change management, governance, automation, and real-world execution.
 slug: opschain-vs-servicenow
 highlights:
   - Native execution engine vs. record-keeping system

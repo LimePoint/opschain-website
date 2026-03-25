@@ -15,7 +15,7 @@ export default function TelecommunicationsPage() {
       <div className='mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8'>
         <h1 className='text-4xl font-bold font-heading text-gray-900'>OpsChain for Telecommunications</h1>
         <p className='mt-4 text-lg text-gray-600'>
-          Automate and govern operational change across network and IT environments — with compliance built in for IEC
+          Automate and govern operational change across network and IT environments, with compliance built in for IEC
           62443, 5G operations, and beyond.
         </p>
 

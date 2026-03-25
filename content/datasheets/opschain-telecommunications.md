@@ -15,4 +15,4 @@ draft: false
 
 ## OpsChain for Telecommunications
 
-Telecommunications providers manage some of the most complex operational environments — spanning legacy network infrastructure, 5G deployments, IMS platforms, and cloud-native services. OpsChain provides unified change governance across all these domains.
+Telecommunications providers manage some of the most complex operational environments, spanning legacy network infrastructure, 5G deployments, IMS platforms, and cloud-native services. OpsChain provides unified change governance across all these domains.

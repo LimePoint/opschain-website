@@ -17,13 +17,13 @@ const features = [
     title: 'Autonomous Agents',
     tagline: 'Operate Smarter. Continuously.',
     description:
-      '24x7 AI-powered teammates that execute BAU operations autonomously — improving efficiency, cutting costs, and ensuring compliance under governed control.',
+      '24x7 AI-powered teammates that execute BAU operations autonomously, improving efficiency, cutting costs, and ensuring compliance under governed control.',
     icon: '/img/tracking.svg',
     href: '/features/autonomous-agents/',
   },
   {
     title: 'Governed Intelligence',
-    tagline: 'AI That Works — and Stays Governed.',
+    tagline: 'AI That Works, and Stays Governed.',
     description:
       'The governance and control engine ensuring every human, system, and AI action is compliant, logged, and auditable.',
     icon: '/img/undraw-collaboration.svg',
@@ -32,7 +32,7 @@ const features = [
   {
     title: 'Security, Auditability & Compliance',
     tagline: 'Automation You Can Trust.',
-    description: 'Built for regulated enterprises — every action governed, secured, and compliant by design.',
+    description: 'Built for regulated enterprises. Every action governed, secured, and compliant by design.',
     icon: '/img/undraw-security.svg',
     href: '/features/security-compliance/',
   },
@@ -40,7 +40,7 @@ const features = [
     title: 'Unified Workflow Orchestration',
     tagline: 'Unify and Automate Everything.',
     description:
-      'Automate complex, multi-system workflows through a unified control plane — no more siloed tools or manual handoffs.',
+      'Automate complex, multi-system workflows through a unified control plane. No more siloed tools or manual handoffs.',
     icon: '/img/workflow.svg',
     href: '/features/workflow-orchestration/',
   },

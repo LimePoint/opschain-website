@@ -1,6 +1,6 @@
 ---
 title: >-
-  The Change Efficiency Index (CEI): Why Enterprise Capacity — Not Budget —
+  The Change Efficiency Index (CEI): Why Enterprise Capacity, Not Budget,
   Defines Transformation Success
 date: '2026-01-13T10:00'
 description: >-
@@ -21,7 +21,7 @@ draft: false
 
 In every enterprise, the ability to change is the real measure of resilience. Yet most organisations remain constrained not by strategy, but by structural limits in how they fund, deliver, and absorb change..  
 
-For CFOs and CIOs, understanding the **true cost of change**, or as I like to refer to it, the **Change Efficiency Index (CEI)** — across both OPEX and CAPEX — is critical to sustaining transformation without exhausting operational capacity.
+For CFOs and CIOs, understanding the **true cost of change**, or as I like to refer to it, the **Change Efficiency Index (CEI)**, across both OPEX and CAPEX, is critical to sustaining transformation without exhausting operational capacity.
 
 
  ---
@@ -32,10 +32,10 @@ Operational expenditure (OPEX) in large enterprises is dominated by two unavoida
 
 ### Business-as-Usual (BAU) Operational Costs
 
-BAU OPEX covers the operational functions that keep the enterprise running — system availability, backups, maintenance, and monitoring. These are the “keep the lights on” activities. Many organisations outsource these functions to Managed Services Providers (MSPs), optimising for cost rather than adaptability.
+BAU OPEX covers the operational functions that keep the enterprise running, system availability, backups, maintenance, and monitoring. These are the “keep the lights on” activities. Many organisations outsource these functions to Managed Services Providers (MSPs), optimising for cost rather than adaptability.
 
 The consequence is that **operational capacity is consumed by stability work**, leaving little room for change.  
-Change in such environments is typically reactive — limited to routine maintenance, break/fix, and emergency change activities.
+Change in such environments is typically reactive, limited to routine maintenance, break/fix, and emergency change activities.
 
 Any discretionary or modernisation work competes for scarce resources, increasing the effective cost of change.
 
@@ -43,7 +43,7 @@ One way to express this efficiency is through a **Baseline Change Efficiency Ind
 
 > **CEI(Baseline)** = (BAU Operations OPEX) ÷ (Number of baseline changes delivered per annum)
 
-This metric quantifies how efficiently routine change is being delivered — and highlights how much operational budget is consumed by routine work. Also note, BAU OPEX not only includes the cost of people to support these activities, but also the ongoing cost of compute, storage, network, software, and other related subscription and ongoing costs.  
+This metric quantifies how efficiently routine change is being delivered, and highlights how much operational budget is consumed by routine work. Also note, BAU OPEX not only includes the cost of people to support these activities, but also the ongoing cost of compute, storage, network, software, and other related subscription and ongoing costs.  
 
 ### Security Operations (SecOps) and Compliance Costs
 
@@ -53,7 +53,7 @@ Regular Security patching, vulnerability management, observability, and incident
 
 Security work, by necessity, often bypasses normal prioritisation. When threats are detected, they must be addressed, and must be addressed now! 
 
-While these changes could be viewed as typically smaller and more frequent than baseline BAU activities, they still consume operational bandwidth. Enterprises that minimise security and compliance spend often offset savings with elevated cyber-risk exposure — a trade-off few can afford.
+While these changes could be viewed as typically smaller and more frequent than baseline BAU activities, they still consume operational bandwidth. Enterprises that minimise security and compliance spend often offset savings with elevated cyber-risk exposure, a trade-off few can afford.
 
 > **CEI(Security)** = (Security Operations OPEX) ÷ (Number of security changes delivered per annum)
 
@@ -77,7 +77,7 @@ This statistic reinforces a fundamental truth: **more projects do not automatica
 
 Even where additional people are added, coordination overhead increases faster than delivery capacity.  
 
-Enterprises often reach a saturation point where adding headcount capacity no longer improves throughput — it merely redistributes the constraint.
+Enterprises often reach a saturation point where adding headcount capacity no longer improves throughput, it merely redistributes the constraint.
 
 So, an Enterprise's Change Efficiency Index (CEI) is the total OPEX by the Total number of changes delivered per annum.
 
@@ -93,17 +93,17 @@ Automation is the single most effective mechanism to increase organisational cap
 
 Done well, automation reduces manual effort, standardises execution, and enables safe, consistent change at scale.  
 
-However, most enterprises have **fragmented automation** — multiple teams using disparate tools with inconsistent governance.  
+However, most enterprises have **fragmented automation**, multiple teams using disparate tools with inconsistent governance.  
 
 Gartner notes that *by 2026, 30 % of enterprises will automate more than half of their network activities* ([Gartner, 2024](https://www.gartner.com/en/newsroom/press-releases/2024-09-18-gartner-says-30-percent-of-enterprises-will-automate-more-than-half-of-their-network-activities-by-2026)).  
 
 This indicates progress, but also illustrates how far many organisations still have to go to unify their automation landscape.
 
-Without consistent governance, automation often becomes another silo — reducing transparency and complicating audit and risk management.  
+Without consistent governance, automation often becomes another silo, reducing transparency and complicating audit and risk management.  
 
 The paradox: automation designed to improve efficiency can, if unmanaged, actually increase complexity and operational fragility.
 
-To capture true benefit, enterprises must view automation not as a collection of scripts or pipelines, but as a **governed operating capability** — where workflows, security, compliance, and observability are all integrated into a single control plane.
+To capture true benefit, enterprises must view automation not as a collection of scripts or pipelines, but as a **governed operating capability**, where workflows, security, compliance, and observability are all integrated into a single control plane.
 
 ---
 
@@ -120,11 +120,11 @@ In practice, AIOps enables enterprises to:
 - Continuously optimise operational performance  
 
 Gartner’s maturity research further notes that *45 % of high-AI-maturity organisations keep AI initiatives operational for at least three years*, compared to only *20 % of low-maturity organisations* ([Gartner, 2025](https://www.gartner.com/en/newsroom/press-releases/2025-06-30-gartner-survey-finds-forty-five-percent-of-organizations-with-high-artificial-intelligence-maturity-keep-artificial-intelligence-projects-operational-for-at-least-three-years)).  
-This demonstrates that sustainable automation benefit requires maturity and governance — not just tooling.
+This demonstrates that sustainable automation benefit requires maturity and governance, not just tooling.
 
 AIOps without Automation is impossible. Automation is a foundational enabler.
 
-Over time, these capabilities allow enterprises to **shift from scaling people to scaling intelligence** — embedding adaptive automation that continuously learns and improves.  
+Over time, these capabilities allow enterprises to **shift from scaling people to scaling intelligence**, embedding adaptive automation that continuously learns and improves.  
 
 The result is a sustained reduction in Change Efficiency Index (CEI), and a measurable increase in the rate of safe, compliant change delivery.
 
@@ -134,11 +134,11 @@ The result is a sustained reduction in Change Efficiency Index (CEI), and a meas
 
 According to Gartner, benchmarking across more than *4,000 IT leaders and 21 verticals* provides the foundation for identifying optimisation opportunities without sacrificing capability ([Gartner, 2023](https://www.gartner.com/en/articles/benchmarking-for-smarter-it-decisions)).  
 
-This aligns directly with the **Cost Efficiency Index (CEI)** framework — a quantitative way to compare efficiency internally and externally.
+This aligns directly with the **Cost Efficiency Index (CEI)** framework, a quantitative way to compare efficiency internally and externally.
 
 Gartner also frames **strategic IT cost optimisation** as a continuous discipline: *reduce, optimise, reinvest* ([Gartner, Cost Optimisation Topic](https://www.gartner.com/en/information-technology/topics/cost-optimization)).  
 
-For CFOs and CIOs, this means savings in baseline and security OPEX should be reinvested in automation, AIOps, and capability uplift — driving a compounding improvement in both cost and capacity for change.
+For CFOs and CIOs, this means savings in baseline and security OPEX should be reinvested in automation, AIOps, and capability uplift, driving a compounding improvement in both cost and capacity for change.
 
 ---
 

@@ -8,14 +8,14 @@ export interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     quote:
-      'OpsChain transformed how we manage infrastructure changes. What used to take days of manual coordination now happens automatically with full compliance — our audit team loves it.',
+      'OpsChain transformed how we manage infrastructure changes. What used to take days of manual coordination now happens automatically with full compliance. Our audit team loves it.',
     name: 'Jane Smith',
     role: 'VP of Operations',
     company: 'Acme Utilities',
   },
   {
     quote:
-      'We evaluated five platforms before choosing OpsChain. The governed AI agents and end-to-end audit trail were the deciding factors — nothing else came close for our compliance requirements.',
+      'We evaluated five platforms before choosing OpsChain. The governed AI agents and end-to-end audit trail were the deciding factors. Nothing else came close for our compliance requirements.',
     name: 'Michael Chen',
     role: 'CTO',
     company: 'Global Banking Corp',

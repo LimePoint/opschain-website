@@ -28,7 +28,7 @@ const tabs: Tab[] = [
     label: 'Autonomous Agents',
     heading: '24x7 operations. No headcount required.',
     description:
-      'Deploy intelligent agents that execute complex operational tasks autonomously — while remaining fully governed and auditable. Free your teams from repetitive toil without sacrificing control.',
+      'Deploy intelligent agents that execute complex operational tasks autonomously, while remaining fully governed and auditable. Free your teams from repetitive toil without sacrificing control.',
   },
   {
     id: 'unified-orchestration',

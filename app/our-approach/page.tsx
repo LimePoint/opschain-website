@@ -6,7 +6,7 @@ import { PageTransition } from '@/components/PageTransition'
 export const metadata: Metadata = {
   title: 'Our Approach',
   description:
-    'Modern enterprises need operations that are intelligent, autonomous, and governed — all in one platform. Discover why OpsChain is the answer.',
+    'Modern enterprises need operations that are intelligent, autonomous, and governed, all in one platform. Discover why OpsChain is the answer.',
 }
 
 export default function OurApproachPage() {
@@ -15,13 +15,13 @@ export default function OurApproachPage() {
       <div className='mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8'>
         {/*<h1 className='text-4xl font-bold font-heading text-gray-900'>Our Approach</h1>*/}
         <p className='mt-4 text-lg text-gray-600'>
-          Modern enterprises need operations that are intelligent, autonomous, and governed — all in one platform.
+          Modern enterprises need operations that are intelligent, autonomous, and governed, all in one platform.
         </p>
 
         <section className='mt-12'>
           <h2 className='text-2xl font-semibold font-heading text-gray-900'>The Problem We Solve</h2>
           <p className='mt-4 text-gray-700'>
-            Enterprise operations are more complex than ever — hybrid environments, legacy systems, global teams, and
+            Enterprise operations are more complex than ever: hybrid environments, legacy systems, global teams, and
             endless manual tasks. Even the best-run organisations struggle with:
           </p>
           <ul className='mt-4 space-y-2 text-gray-700'>
@@ -43,7 +43,7 @@ export default function OurApproachPage() {
             visibility, and continuous performance.
           </p>
           <blockquote className='mt-6 border-l-4 border-primary pl-4 italic text-gray-700'>
-            OpsChain doesn&apos;t just automate operations — it governs them. Where intelligence meets control.
+            OpsChain doesn&apos;t just automate operations, it governs them. Where intelligence meets control.
           </blockquote>
         </section>
 
@@ -60,7 +60,7 @@ export default function OurApproachPage() {
             <div className='rounded-lg border border-gray-200 bg-gray-50 p-4'>
               <h3 className='font-semibold text-gray-900'>Governance first</h3>
               <p className='mt-1 text-sm text-gray-600'>
-                Trust and transparency aren&apos;t optional — they&apos;re foundational.
+                Trust and transparency aren&apos;t optional. They&apos;re foundational.
               </p>
             </div>
             <div className='rounded-lg border border-gray-200 bg-gray-50 p-4'>
@@ -82,15 +82,15 @@ export default function OurApproachPage() {
           <ul className='mt-6 space-y-3'>
             {[
               {
-                text: 'Always-on Autonomous Agents — digital teammates that work 24x7 with full compliance and traceability.',
+                text: 'Always-on Autonomous Agents: digital teammates that work 24x7 with full compliance and traceability.',
                 href: '/features/autonomous-agents/',
               },
               {
-                text: 'Governed Intelligence — the governance and control engine ensuring every action is compliant, logged, and auditable.',
+                text: 'Governed Intelligence: the governance and control engine ensuring every action is compliant, logged, and auditable.',
                 href: '/features/governed-intelligence/',
               },
               {
-                text: "Security, Auditability & Compliance — built for the world's most regulated industries.",
+                text: "Security, Auditability & Compliance: built for the world's most regulated industries.",
                 href: '/features/security-compliance/',
               },
             ].map((item) => (
@@ -114,7 +114,7 @@ export default function OurApproachPage() {
         <section className='mt-12 text-center'>
           <CTAButton href='/book-demo/' label='Book Your Demo Today' />
           <p className='mt-4 text-sm text-gray-500'>
-            See why teams choose OpsChain — start transforming your operations.
+            See why teams choose OpsChain. Start transforming your operations.
           </p>
         </section>
       </div>

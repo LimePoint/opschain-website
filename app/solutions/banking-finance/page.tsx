@@ -15,8 +15,8 @@ export default function BankingFinancePage() {
       <div className='mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8'>
         <h1 className='text-4xl font-bold font-heading text-gray-900'>OpsChain for Banking & Financial Services</h1>
         <p className='mt-4 text-lg text-gray-600'>
-          Automate and govern operational change across banking environments — with compliance built in for PCI-DSS,
-          APRA CPS 234, and beyond.
+          Automate and govern operational change across banking environments, with compliance built in for PCI-DSS, APRA
+          CPS 234, and beyond.
         </p>
 
         <section className='mt-12'>

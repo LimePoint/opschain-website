@@ -15,7 +15,7 @@ export default function UtilitiesEnergyPage() {
       <div className='mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8'>
         <h1 className='text-4xl font-bold font-heading text-gray-900'>OpsChain for Utilities & Energy</h1>
         <p className='mt-4 text-lg text-gray-600'>
-          Automate and govern operational change across critical infrastructure — with compliance built in for NERC CIP,
+          Automate and govern operational change across critical infrastructure, with compliance built in for NERC CIP,
           IEC 62443, and beyond.
         </p>
 
@@ -26,7 +26,7 @@ export default function UtilitiesEnergyPage() {
               <h3 className='font-semibold text-gray-900'>NERC CIP Compliance</h3>
               <p className='mt-1 text-sm text-gray-600'>
                 Mandatory cybersecurity standards for bulk electric systems require rigorous change control, access
-                management, and audit evidence — often managed across legacy and modern systems simultaneously.
+                management, and audit evidence, often managed across legacy and modern systems simultaneously.
               </p>
             </div>
             <div className='rounded-lg border border-gray-200 bg-gray-50 p-4'>
