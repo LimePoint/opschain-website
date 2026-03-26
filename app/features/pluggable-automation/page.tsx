@@ -15,7 +15,7 @@ export default function PluggableAutomationPage() {
         title='Pluggable Automation | Tool-Agnostic Framework'
         tagline='Automate Without Limits.'
         description="OpsChain's pluggable automation framework gives you the freedom to integrate any tool, system, or workflow into a single, secure operations ecosystem. Whether you rely on Terraform, Ansible, custom scripts, or emerging technologies, OpsChain is completely tool-agnostic."
-        icon='/img/ocplugins.png'
+        icon='/img/opschain-pluggable.svg'
         details={[
           'Tool-agnostic framework supporting any automation tool',
           'Terraform, Ansible, Bash, Python, Java, CLIs. All supported',
