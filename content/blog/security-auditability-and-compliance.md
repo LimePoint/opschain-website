@@ -14,6 +14,7 @@ tags:
   - Automation
   - Modern Operations without Friction
 draft: false
+# coverImage: /img/product-tour/opschain-audit-trail.png
 ---
 
 Enterprises using multiple DevOps tools face a visibility gap, security and compliance evidence becomes fragmented across pipelines, scripts, and teams.  

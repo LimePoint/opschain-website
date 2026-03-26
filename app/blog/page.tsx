@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import { getAllBlogPosts, getAllTags, getFeaturedPosts, getPostsByTag, readingTime, tagToSlug } from '@/lib/content'
 import { BlogPostList } from '@/components/BlogPostList'
 import { PageTransition } from '@/components/PageTransition'
@@ -31,34 +32,47 @@ export default function BlogIndex() {
               {featuredPosts.map((post) => (
                 <article
                   key={post.slug}
-                  className='rounded-lg border-l-4 border-l-primary bg-gray-50 p-6 transition-shadow hover:shadow-md'
+                  className='group overflow-hidden rounded-lg border-l-4 border-l-primary bg-gray-50 transition-shadow hover:shadow-md'
                 >
-                  <span className='inline-block rounded-full bg-primary/10 px-3 py-0.5 text-xs font-medium text-primary'>
-                    Featured
-                  </span>
-                  <h2 className='mt-3 text-lg font-semibold font-heading'>
-                    <Link href={`/blog/${post.slug}/`} className='text-gray-900 hover:text-primary transition-colors'>
-                      {post.title}
+                  {post.coverImage && (
+                    <Link href={`/blog/${post.slug}/`} className='block overflow-hidden'>
+                      <Image
+                        src={post.coverImage}
+                        alt=''
+                        width={600}
+                        height={200}
+                        className='h-40 w-full object-cover transition-transform group-hover:scale-105'
+                      />
                     </Link>
-                  </h2>
-                  <p className='mt-2 text-sm text-gray-700 line-clamp-3'>{post.description}</p>
-                  <div className='mt-3 flex items-center gap-3 text-xs text-gray-600'>
-                    <time dateTime={post.date}>
-                      {new Date(post.date).toLocaleDateString('en-US', {
-                        year: 'numeric',
-                        month: 'long',
-                        day: 'numeric',
-                      })}
-                    </time>
-                    <span>&middot;</span>
-                    <span>{readingTime(post)} min read</span>
+                  )}
+                  <div className='p-6'>
+                    <span className='inline-block rounded-full bg-primary/10 px-3 py-0.5 text-xs font-medium text-primary'>
+                      Featured
+                    </span>
+                    <h2 className='mt-3 text-lg font-semibold font-heading'>
+                      <Link href={`/blog/${post.slug}/`} className='text-gray-900 hover:text-primary transition-colors'>
+                        {post.title}
+                      </Link>
+                    </h2>
+                    <p className='mt-2 text-sm text-gray-700 line-clamp-3'>{post.description}</p>
+                    <div className='mt-3 flex items-center gap-3 text-xs text-gray-600'>
+                      <time dateTime={post.date}>
+                        {new Date(post.date).toLocaleDateString('en-US', {
+                          year: 'numeric',
+                          month: 'long',
+                          day: 'numeric',
+                        })}
+                      </time>
+                      <span>&middot;</span>
+                      <span>{readingTime(post)} min read</span>
+                    </div>
+                    <Link
+                      href={`/blog/${post.slug}/`}
+                      className='mt-4 inline-block text-sm font-medium text-primary hover:text-primary-dark'
+                    >
+                      Read more &rarr;
+                    </Link>
                   </div>
-                  <Link
-                    href={`/blog/${post.slug}/`}
-                    className='mt-4 inline-block text-sm font-medium text-primary hover:text-primary-dark'
-                  >
-                    Read more &rarr;
-                  </Link>
                 </article>
               ))}
             </div>
