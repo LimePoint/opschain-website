@@ -1,0 +1,52 @@
+# OpsChain
+> Enterprise operations automation and governance platform by LimePoint
+
+OpsChain is a change management and orchestration platform for enterprise DevOps,
+infrastructure, and platform engineering teams. It provides autonomous AI agents,
+governed intelligence, unified workflow orchestration, and compliance-ready
+audit trails.
+
+## What OpsChain Does
+
+OpsChain automates infrastructure change management with AI-powered agents,
+governed workflows, and end-to-end audit trails. It unifies tools, teams,
+and processes under a single governed automation layer — so every change is
+safe, compliant, and traceable.
+
+## Target Personas
+
+- Platform Engineering Leaders
+- DevOps and SRE Teams
+- CISOs and Compliance Officers
+- CIOs and CTOs in regulated industries
+- IT Operations Managers
+
+## Key Capabilities
+
+- Autonomous Agents: 24x7 AI-powered operations teammates
+- Governed Intelligence: Policy-enforced, auditable AI automation
+- Unified Workflow Orchestration: Single control plane across cloud, on-prem, hybrid
+- Pluggable Automation: Tool-agnostic framework (Terraform, Ansible, custom scripts)
+- Security & Compliance: Enterprise-grade vault integration, immutable audit trails
+- Real-Time Observability: Full visibility with self-healing capabilities
+- Analytics: Operational insights and continuous improvement metrics
+
+## Industry Solutions
+
+- Utilities & Energy: NERC CIP, IEC 62443 compliance
+- Banking & Financial Services: PCI-DSS, APRA CPS 234 alignment
+- Telecommunications: Network change governance for 5G, IMS
+
+## Key Pages
+
+- Features: https://opschain.io/features/autonomous-agents/
+- Our Approach: https://opschain.io/our-approach/
+- Solutions: https://opschain.io/solutions/utilities-energy/
+- Blog: https://opschain.io/blog/
+- Documentation: https://docs.opschain.io
+- Book a Demo: https://opschain.io/book-demo/
+
+## Company
+
+OpsChain is built by LimePoint Pty Ltd, an Australian company.
+Website: https://limepoint.com

@@ -1,0 +1,8 @@
+[build]
+  command = "rm -rf .next && npm run build"
+  publish = "out"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
