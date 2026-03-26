@@ -64,7 +64,7 @@ const features = [
 
 const verticals = [
   {
-    icon: '/img/cloud-hybrid.svg',
+    icon: '/img/industry-utilities.svg',
     title: 'Utilities & Energy',
     description:
       'Automate and govern operational change across critical infrastructure with compliance built in for NERC CIP and IEC 62443.',
@@ -72,7 +72,7 @@ const verticals = [
     href: '/solutions/utilities-energy/',
   },
   {
-    icon: '/img/undraw-security.svg',
+    icon: '/img/industry-finance.svg',
     title: 'Banking & Financial Services',
     description:
       'PCI-DSS and APRA CPS 234 aligned automation for regulated financial operations with full audit trail.',
@@ -80,7 +80,7 @@ const verticals = [
     href: '/solutions/banking-finance/',
   },
   {
-    icon: '/img/cross-platform.svg',
+    icon: '/img/industry-telco.svg',
     title: 'Telecommunications',
     description:
       'Unified change governance across 5G, IMS, and hybrid network infrastructure with real-time observability.',

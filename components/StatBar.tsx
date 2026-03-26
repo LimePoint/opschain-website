@@ -7,7 +7,8 @@ import { useEffect, useRef, useState } from 'react'
 const stats = [
   { value: 500000, suffix: '+', label: 'Changes Automated Monthly' },
   { value: 99.9, suffix: '%', label: 'Compliance Rate', decimals: 1 },
-  { value: 3, suffix: '', label: 'Regulated Verticals' },
+  // { value: 3, suffix: '', label: 'Regulated Verticals' },
+  { value: 100, suffix: '+', label: 'Pluggable Automation Integrations' },
   { value: 24, suffix: '/7', label: 'Autonomous Operations' },
 ] as const
 
