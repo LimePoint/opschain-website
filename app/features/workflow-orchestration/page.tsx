@@ -15,7 +15,7 @@ export default function WorkflowOrchestrationPage() {
         title='Unified Workflow Orchestration'
         tagline='Unify and Automate Everything.'
         description='A single control plane to orchestrate workflows across cloud, on-prem, and hybrid environments, seamlessly integrating tools, systems, and teams. AI agents and humans can both initiate and participate in the same workflows, enabling true collaboration and automation without boundaries.'
-        icon='/img/workflow.svg'
+        icon='/img/opschain-unified-workflow.svg'
         details={[
           'Single control plane for cloud, on-prem, and hybrid',
           'Cross-system automation spanning infrastructure, applications, and services',

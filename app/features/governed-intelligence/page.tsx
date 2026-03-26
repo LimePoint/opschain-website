@@ -15,7 +15,7 @@ export default function GovernedIntelligencePage() {
         title='Governed Intelligence | AI That Stays Accountable'
         tagline='AI That Works, and Stays Governed.'
         description='AI agents operate within a governed framework that enforces policies, tracks every action, and ensures complete auditability, without compromising speed or autonomy. Every decision and execution step taken by an agent is logged and attributable, giving teams full transparency and traceability across automated operations.'
-        icon='/img/undraw-collaboration.svg'
+        icon='/img/opschain-governed-intelligence.svg'
         details={[
           'Policy enforcement at every step of AI execution',
           'Complete audit trail for all agent actions',

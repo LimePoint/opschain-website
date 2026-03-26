@@ -18,7 +18,7 @@ const features = [
     tagline: 'Operate Smarter. Continuously.',
     description:
       '24x7 AI-powered teammates that execute BAU operations autonomously, improving efficiency, cutting costs, and ensuring compliance under governed control.',
-    icon: '/img/tracking.svg',
+    icon: '/img/opschain-autonomous-agents.svg',
     href: '/features/autonomous-agents/',
   },
   {
@@ -26,14 +26,14 @@ const features = [
     tagline: 'AI That Works, and Stays Governed.',
     description:
       'The governance and control engine ensuring every human, system, and AI action is compliant, logged, and auditable.',
-    icon: '/img/undraw-collaboration.svg',
+    icon: '/img/opschain-governed-intelligence.svg',
     href: '/features/governed-intelligence/',
   },
   {
     title: 'Security, Auditability & Compliance',
     tagline: 'Automation You Can Trust.',
     description: 'Built for regulated enterprises. Every action governed, secured, and compliant by design.',
-    icon: '/img/undraw-security.svg',
+    icon: '/img/opschain-security.svg',
     href: '/features/security-compliance/',
   },
   {
@@ -41,7 +41,7 @@ const features = [
     tagline: 'Unify and Automate Everything.',
     description:
       'Automate complex, multi-system workflows through a unified control plane. No more siloed tools or manual handoffs.',
-    icon: '/img/workflow.svg',
+    icon: '/img/opschain-unified-workflow.svg',
     href: '/features/workflow-orchestration/',
   },
   {
@@ -49,7 +49,7 @@ const features = [
     tagline: 'Always-On Visibility. Self-Healing by Design.',
     description:
       'Gain full visibility into every process and empower the platform to detect and fix issues before they impact your business.',
-    icon: '/img/manage.svg',
+    icon: '/img/opschain-observability.svg',
     href: '/features/observability/',
   },
   {
@@ -57,7 +57,7 @@ const features = [
     tagline: 'Measure. Learn. Optimise.',
     description:
       'Turn operational data into actionable insights that drive continuous improvement across your entire operations stack.',
-    icon: '/img/undraw-scrum-board.svg',
+    icon: '/img/opschain-analytics.svg',
     href: '/features/analytics/',
   },
 ]

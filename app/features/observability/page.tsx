@@ -15,7 +15,7 @@ export default function ObservabilityPage() {
         title='Real-Time Observability & Self-Healing'
         tagline='Always-On Visibility. Self-Healing by Design.'
         description="Gain full visibility into every process and empower the platform to detect and fix issues before they impact your business. OpsChain's observability capabilities provide real-time insights across all automated operations."
-        icon='/img/manage.svg'
+        icon='/img/opschain-observability.svg'
         details={[
           'Real-time visibility into all operational processes',
           'Proactive issue detection before business impact',

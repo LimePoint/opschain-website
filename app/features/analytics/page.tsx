@@ -15,7 +15,7 @@ export default function AnalyticsPage() {
         title='Analytics, Insights & Continuous Improvement'
         tagline='Measure. Learn. Optimise.'
         description='Turn operational data into actionable insights that drive continuous improvement across your entire operations stack. Track change efficiency, identify bottlenecks, and optimise workflows with data-driven decisions.'
-        icon='/img/undraw-scrum-board.svg'
+        icon='/img/opschain-analytics.svg'
         details={[
           'Operational analytics and performance dashboards',
           'Change efficiency tracking and bottleneck identification',
