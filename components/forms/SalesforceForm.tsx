@@ -10,6 +10,7 @@ const SF_ORG_ID = process.env.NEXT_PUBLIC_SF_ORG_ID || '00DQE00000BdTqD'
 export interface SalesforceFormProps {
   formName: string
   leadSource?: string
+  leadSourceDetail?: string
   onSuccess?: () => void
   children: ReactNode
   submitLabel?: string
@@ -19,6 +20,7 @@ export interface SalesforceFormProps {
 export function SalesforceForm({
   formName,
   leadSource = 'Website',
+  leadSourceDetail = '',
   onSuccess,
   children,
   submitLabel = 'Submit',
@@ -117,6 +119,7 @@ export function SalesforceForm({
       >
         <input type='hidden' name='oid' value={SF_ORG_ID} />
         <input type='hidden' name='lead_source' value={leadSource} />
+        <input type='hidden' name='00NOl000003kEmD' value={leadSourceDetail} />
         <input type='hidden' name='retURL' value={typeof window !== 'undefined' ? window.location.href : ''} />
 
         {children}

@@ -11,6 +11,13 @@ export interface SearchEntry {
 
 const sitePages: SearchEntry[] = [
   {
+    title: 'Contact Us',
+    description:
+      'Get in touch with the OpsChain team. Tell us about your operational challenges and discover how governed, intelligent automation can help.',
+    url: '/contact/',
+    type: 'page',
+  },
+  {
     title: 'Our Approach',
     description:
       'Modern enterprises need operations that are intelligent, autonomous, and governed — all in one platform. Discover why OpsChain is the answer.',

@@ -62,7 +62,8 @@ export function GatedAssetForm({ assetName, downloadUrl, available = false }: Ga
       <p className='mb-4 text-sm text-gray-600'>Fill in the form below to access this resource.</p>
       <SalesforceForm
         formName={`Datasheet - ${assetName}`}
-        leadSource={`Website - Datasheet - ${assetName}`}
+        leadSource='Website - Datasheet'
+        leadSourceDetail={assetName}
         onSuccess={handleSuccess}
         submitLabel='Access Resource'
       >
