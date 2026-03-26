@@ -15,6 +15,7 @@ tags:
   - Operations
   - Modern Operations without Friction
 draft: false
+# coverImage: /img/complex-code-discussion.png
 ---
 
 Many organisations swing between two extremes, rigid governance that slows delivery, or unchecked automation that increases risk. The challenge is creating a governed process that doesn’t block agility.  

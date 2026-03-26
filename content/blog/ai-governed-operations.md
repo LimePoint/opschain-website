@@ -16,6 +16,7 @@ tags:
   - Observability
   - Modern Operations without Friction
 draft: false
+# coverImage: /img/complex-code-discussion.png
 ---
 
 Traditional operations are reactive, teams respond after things go wrong. With the emergence of **Agentic AI**, it’s possible to govern systems that not only act autonomously but do so safely.  

@@ -41,7 +41,7 @@ export default function BlogIndex() {
                         alt=''
                         width={600}
                         height={200}
-                        className='h-40 w-full object-cover transition-transform group-hover:scale-105'
+                        className='h-40 w-full object-contain transition-transform group-hover:scale-105'
                       />
                     </Link>
                   )}

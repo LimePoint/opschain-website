@@ -17,6 +17,7 @@ tags:
   - Governed Automation
   - Compliance
 draft: false
+# coverImage: /img/complex-code-discussion.png
 ---
 
 Enterprises are moving quickly to adopt AI, and the impact goes far beyond chatbots or virtual assistants. The real transformation comes from Agentic AI, autonomous AI agents capable of reasoning, making decisions, and taking action across complex workflows.

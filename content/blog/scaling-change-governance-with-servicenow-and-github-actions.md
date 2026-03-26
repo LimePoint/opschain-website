@@ -16,6 +16,7 @@ tags:
   - Workflow Orchestration
   - Agentic AI
 draft: false
+# coverImage: /img/complex-code-discussion.png
 ---
 
 Large enterprises typically have:

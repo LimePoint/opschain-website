@@ -13,6 +13,7 @@ tags:
   - Automation
   - Modern Operations without Friction
 draft: false
+# coverImage: /img/complex-code-discussion.png
 ---
 
 Traditional change management processes were built for static systems. In an AI-driven, continuously changing environment, they become an obstacle.  

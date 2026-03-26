@@ -15,6 +15,7 @@ tags:
   - Governance
   - Modern Operations without Friction
 draft: false
+# coverImage: /img/complex-code-discussion.png
 ---
 
 Most enterprises invest heavily in automation but still face outages, drift, and bottlenecks. The issue isn’t the tools, it’s the lack of orchestration and context between them.  

@@ -15,6 +15,7 @@ tags:
   - Human Error
   - Modern Operations without Friction
 draft: false
+# coverImage: /img/complex-code-discussion.png
 ---
 
 Even in the most automated environments, human decisions still drive incidents, change failures, and policy breaches. This article explores the people dimension of operations: inconsistent skills, poor communication, and unclear accountability.  

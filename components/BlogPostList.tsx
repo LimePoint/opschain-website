@@ -36,7 +36,7 @@ export function BlogPostList({ posts }: { posts: BlogPostItem[] }) {
                   alt=''
                   width={160}
                   height={107}
-                  className='h-[107px] w-[160px] object-cover transition-transform hover:scale-105'
+                  className='h-[107px] w-[160px] object-contain transition-transform hover:scale-105'
                 />
               </Link>
             )}

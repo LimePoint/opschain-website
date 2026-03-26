@@ -14,6 +14,7 @@ tags:
   - Platform Engineering
   - Modern Operations without Friction
 draft: false
+# coverImage: /img/complex-code-discussion.png
 ---
 
 Integrating ITSM tools like ServiceNow with modern CI/CD platforms sounds simple, until policy, ownership, and process differences emerge. 

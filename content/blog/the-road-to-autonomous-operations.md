@@ -14,6 +14,7 @@ tags:
   - Operational Excellence
   - Modern Operations without Friction
 draft: false
+# coverImage: /img/complex-code-discussion.png
 ---
 
 Autonomous operations are becoming achievable, but they require the right governance foundations. Without a way to control and explain what automation does, “autonomy” just amplifies risk.  

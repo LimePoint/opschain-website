@@ -13,6 +13,11 @@ tags:
   - Modern Operations without Friction
 draft: false
 featured: true
+coverImage: /img/complex-code-discussion.png
+# coverImage: /img/opschain-plugins.svg
+# coverImage: /img/winning-with-opschain.png
+# coverImage: /img/cogs.svg
+# coverImage: /img/auditability.svg
 ---
 
 Enterprise operations have never been more complex, or more fragmented.  

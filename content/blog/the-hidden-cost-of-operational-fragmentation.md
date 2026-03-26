@@ -16,6 +16,7 @@ tags:
   - Platform Engineering
   - Modern Operations without Friction
 draft: false
+# coverImage: /img/complex-code-discussion.png
 ---
 
 Modern enterprises rely on dozens of interconnected systems and workflows, each optimized in isolation but rarely coordinated end-to-end. This fragmentation leads to duplicated effort, poor visibility, and inconsistent compliance.  

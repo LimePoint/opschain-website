@@ -13,6 +13,7 @@ tags:
   - DevOps
   - Modern Operations without Friction
 draft: false
+# coverImage: /img/complex-code-discussion.png
 ---
 
 Platform engineering promises standardization, yet many enterprises struggle to align developer experience with operational control.  
