@@ -1,6 +1,6 @@
 ---
 title: 'From Reactive to Proactive: AI-Governed Operations'
-date: '2026-03-17T10:00'
+date: '2026-02-10T10:00'
 description: >-
   Discover how OpsChain’s Governed Intelligence and Autonomous Agents
   capabilities deliver explainable, auditable automation across complex
@@ -16,6 +16,8 @@ tags:
   - Observability
   - Modern Operations without Friction
 draft: false
+series: Modern Operations without Friction
+seriesOrder: 5
 # coverImage: /img/complex-code-discussion.png
 ---
 

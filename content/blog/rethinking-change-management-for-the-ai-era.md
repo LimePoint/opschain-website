@@ -1,6 +1,6 @@
 ---
 title: Rethinking Change Management for the AI Era
-date: '2026-03-10T10:00'
+date: '2026-03-17T10:00'
 description: >-
   Discover how OpsChain’s governed change pipelines and AI-driven policy
   enforcement redefine change control for modern enterprises.
@@ -13,6 +13,8 @@ tags:
   - Automation
   - Modern Operations without Friction
 draft: false
+series: Modern Operations without Friction
+seriesOrder: 10
 # coverImage: /img/complex-code-discussion.png
 ---
 

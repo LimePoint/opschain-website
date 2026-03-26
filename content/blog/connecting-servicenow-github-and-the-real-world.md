@@ -1,6 +1,6 @@
 ---
 title: 'Connecting ServiceNow, GitHub, and the Real World of Change'
-date: '2026-02-10T10:00'
+date: '2026-03-03T10:00'
 description: >-
   Learn how OpsChain provides a unified change orchestration layer, bridging
   ITSM, Git, and automation platforms under a single governed process.
@@ -14,6 +14,8 @@ tags:
   - Platform Engineering
   - Modern Operations without Friction
 draft: false
+series: Modern Operations without Friction
+seriesOrder: 8
 # coverImage: /img/complex-code-discussion.png
 ---
 

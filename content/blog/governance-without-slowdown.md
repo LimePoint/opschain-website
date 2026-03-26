@@ -1,6 +1,6 @@
 ---
 title: 'Governance Without Slowdown: How to Balance Control and Agility'
-date: '2026-02-03T10:00'
+date: '2026-01-20T10:00'
 description: >-
   How OpsChain’s Governed Intelligence automates compliance policies and change
   controls, ensuring every action is recorded, verified, and auditable, without
@@ -15,6 +15,8 @@ tags:
   - Operations
   - Modern Operations without Friction
 draft: false
+series: Modern Operations without Friction
+seriesOrder: 2
 # coverImage: /img/complex-code-discussion.png
 ---
 

@@ -15,6 +15,9 @@ interface BlogPostItem {
   tags: string[]
   draft: boolean
   featured: boolean
+  series?: string
+  seriesOrder?: number
+  seriesTotalParts?: number
   coverImage?: string
   metadata: { readingTime: number; wordCount: number }
 }
@@ -63,6 +66,17 @@ export function BlogPostList({ posts }: { posts: BlogPostItem[] }) {
                     <span className='rounded bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary'>Featured</span>
                   </>
                 )}
+                {post.series && post.seriesOrder && post.seriesTotalParts && (
+                  <>
+                    <span>&middot;</span>
+                    <Link
+                      href={`/blog/${tagToSlug(post.series)}/`}
+                      className='rounded bg-blue-100 px-2 py-0.5 text-xs font-medium text-blue-800 hover:bg-blue-200 transition-colors'
+                    >
+                      Part {post.seriesOrder} of {post.seriesTotalParts}
+                    </Link>
+                  </>
+                )}
               </div>
               <h2 className='mt-2 text-2xl font-semibold font-heading'>
                 <Link href={`/blog/${post.slug}/`} className='text-gray-900 hover:text-primary transition-colors'>
@@ -71,11 +85,18 @@ export function BlogPostList({ posts }: { posts: BlogPostItem[] }) {
               </h2>
               <p className='mt-2 text-gray-600 line-clamp-2'>{post.description}</p>
               <div className='mt-3 flex flex-wrap gap-2'>
-                {post.tags.slice(0, 4).map((tag) => (
+                {(post.series
+                  ? [post.series, ...post.tags.filter((t) => t !== post.series)].slice(0, 4)
+                  : post.tags.slice(0, 4)
+                ).map((tag) => (
                   <Link
                     key={tag}
                     href={`/blog/tags/${tagToSlug(tag)}/`}
-                    className='rounded-full bg-gray-100 px-3 py-1 text-xs text-gray-600 hover:bg-primary hover:text-white transition-colors'
+                    className={
+                      tag === post.series
+                        ? 'rounded-full border border-blue-200 bg-blue-50 px-3 py-1 text-xs font-medium text-blue-800 hover:bg-blue-100 transition-colors'
+                        : 'rounded-full border border-gray-200 bg-gray-50 px-3 py-1 text-xs font-medium text-gray-700 hover:border-primary hover:bg-primary hover:text-white transition-colors'
+                    }
                   >
                     {tag}
                   </Link>

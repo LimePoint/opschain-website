@@ -1,6 +1,6 @@
 ---
 title: 'When Automation Fails: Why Tool-Centric Thinking Limits Enterprise Scale'
-date: '2026-01-20T10:00'
+date: '2026-01-27T10:00'
 description: >-
   How OpsChain’s Pluggable Automation model enables automation across
   heterogeneous environments, governed by shared workflows, approvals, and
@@ -15,6 +15,8 @@ tags:
   - Governance
   - Modern Operations without Friction
 draft: false
+series: Modern Operations without Friction
+seriesOrder: 3
 # coverImage: /img/complex-code-discussion.png
 ---
 

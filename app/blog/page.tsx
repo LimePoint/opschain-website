@@ -1,7 +1,15 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
-import { getAllBlogPosts, getAllTags, getFeaturedPosts, getPostsByTag, readingTime, tagToSlug } from '@/lib/content'
+import {
+  getAllBlogPosts,
+  getAllTags,
+  getFeaturedPosts,
+  getPostsByTag,
+  getSeriesPosts,
+  readingTime,
+  tagToSlug,
+} from '@/lib/content'
 import { BlogPostList } from '@/components/BlogPostList'
 import { PageTransition } from '@/components/PageTransition'
 
@@ -15,7 +23,18 @@ export default function BlogIndex() {
   const allPosts = getAllBlogPosts()
   const featuredPosts = getFeaturedPosts()
   const featuredSlugs = new Set(featuredPosts.map((p) => p.slug))
-  const posts = allPosts.filter((p) => !featuredSlugs.has(p.slug))
+  const nonFeatured = allPosts.filter((p) => !featuredSlugs.has(p.slug))
+  const seriesTotals = new Map<string, number>()
+  const posts = nonFeatured.map((p) => {
+    if (p.series && p.seriesOrder) {
+      if (!seriesTotals.has(p.series)) {
+        seriesTotals.set(p.series, getSeriesPosts(p.series).length)
+      }
+      return { ...p, seriesTotalParts: seriesTotals.get(p.series) }
+    }
+    return p
+  })
+  const seriesNames = new Set(allPosts.map((p) => p.series).filter(Boolean))
   const tags = getAllTags()
 
   return (
@@ -90,7 +109,11 @@ export default function BlogIndex() {
                   <Link
                     key={tag}
                     href={`/blog/tags/${tagToSlug(tag)}/`}
-                    className='rounded-full bg-gray-100 px-3 py-1 text-xs text-gray-700 hover:bg-primary hover:text-white transition-colors'
+                    className={
+                      seriesNames.has(tag)
+                        ? 'rounded-full border border-blue-200 bg-blue-50 px-3 py-1 text-xs font-medium text-blue-800 hover:bg-blue-100 transition-colors'
+                        : 'rounded-full border border-gray-200 bg-gray-50 px-3 py-1 text-xs font-medium text-gray-700 hover:border-primary hover:bg-primary hover:text-white transition-colors'
+                    }
                   >
                     {tag} ({getPostsByTag(tag).length})
                   </Link>

@@ -2,7 +2,15 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import Image from 'next/image'
-import { getAllBlogSlugs, getBlogPost, getRelatedPosts, getAuthor, readingTime, tagToSlug } from '@/lib/content'
+import {
+  getAllBlogSlugs,
+  getBlogPost,
+  getRelatedPosts,
+  getAuthor,
+  getSeriesInfo,
+  readingTime,
+  tagToSlug,
+} from '@/lib/content'
 import { BlogPostingSchema } from '@/components/seo/JsonLd'
 import { ScrollTracker } from '@/components/analytics/ScrollTracker'
 import { PageTransition } from '@/components/PageTransition'
@@ -48,6 +56,7 @@ export default async function BlogPostPage({ params }: PageProps) {
 
   const related = getRelatedPosts(post.slug, post.tags)
   const author = getAuthor(post.author)
+  const seriesInfo = getSeriesInfo(post)
 
   return (
     <PageTransition>
@@ -96,13 +105,25 @@ export default async function BlogPostPage({ params }: PageProps) {
             <span>&middot;</span>
             <span>{readingTime(post)} min read</span>
           </div>
+          {seriesInfo && (
+            <Link
+              href={`/blog/${seriesInfo.indexSlug}/`}
+              className='mt-3 inline-block rounded bg-blue-100 px-2.5 py-1 text-xs font-medium text-blue-800 hover:bg-blue-200 transition-colors'
+            >
+              Part {seriesInfo.part} of {seriesInfo.total} — {seriesInfo.name}
+            </Link>
+          )}
           <h1 className='mt-4 text-4xl font-bold font-heading text-gray-900 leading-tight'>{post.title}</h1>
           <div className='mt-4 flex flex-wrap gap-2'>
             {post.tags.map((tag) => (
               <Link
                 key={tag}
                 href={`/blog/tags/${tagToSlug(tag)}/`}
-                className='rounded-full bg-gray-100 px-3 py-1 text-xs text-gray-600 hover:bg-primary hover:text-white transition-colors'
+                className={
+                  tag === post.series
+                    ? 'rounded-full bg-blue-100 px-3 py-1 text-xs font-medium text-blue-800 hover:bg-blue-200 transition-colors'
+                    : 'rounded-full bg-gray-100 px-3 py-1 text-xs text-gray-600 hover:bg-primary hover:text-white transition-colors'
+                }
               >
                 {tag}
               </Link>

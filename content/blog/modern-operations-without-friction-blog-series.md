@@ -9,10 +9,10 @@ description: >-
 author: Goran Stankovski
 slug: modern-operations-without-friction
 tags:
-  - OpsChain
   - Modern Operations without Friction
 draft: false
 featured: true
+series: Modern Operations without Friction
 coverImage: /img/complex-code-discussion.png
 # coverImage: /img/opschain-plugins.svg
 # coverImage: /img/winning-with-opschain.png

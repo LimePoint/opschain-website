@@ -1,6 +1,6 @@
 ---
 title: The Road to Autonomous Operations
-date: '2026-03-26T10:00'
+date: '2026-03-10T10:00'
 description: >-
   Learn how OpsChain’s platform enables controlled autonomy, combining AI,
   automation, and policy governance in one framework.
@@ -14,6 +14,8 @@ tags:
   - Operational Excellence
   - Modern Operations without Friction
 draft: false
+series: Modern Operations without Friction
+seriesOrder: 9
 # coverImage: /img/complex-code-discussion.png
 ---
 

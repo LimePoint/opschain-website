@@ -98,6 +98,23 @@ export function slugToTag(slug: string): string | undefined {
   return getAllTags().find((tag) => tagToSlug(tag) === slug)
 }
 
+export function getSeriesPosts(seriesName: string): BlogPost[] {
+  return getAllBlogPosts()
+    .filter((p) => p.series === seriesName && p.seriesOrder)
+    .sort((a, b) => (a.seriesOrder ?? 0) - (b.seriesOrder ?? 0))
+}
+
+export function getSeriesInfo(post: BlogPost): { name: string; part: number; total: number; indexSlug: string } | null {
+  if (!post.series || !post.seriesOrder) return null
+  const total = getSeriesPosts(post.series).length
+  return {
+    name: post.series,
+    part: post.seriesOrder,
+    total,
+    indexSlug: tagToSlug(post.series),
+  }
+}
+
 export function getRelatedPosts(currentSlug: string, tags: string[], limit: number = 3): BlogPost[] {
   const allPosts = getAllBlogPosts().filter((p) => p.slug !== currentSlug)
 

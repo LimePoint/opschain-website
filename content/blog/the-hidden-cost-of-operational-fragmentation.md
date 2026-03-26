@@ -16,6 +16,8 @@ tags:
   - Platform Engineering
   - Modern Operations without Friction
 draft: false
+series: Modern Operations without Friction
+seriesOrder: 1
 # coverImage: /img/complex-code-discussion.png
 ---
 

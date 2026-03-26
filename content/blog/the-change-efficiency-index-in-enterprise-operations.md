@@ -15,7 +15,6 @@ tags:
   - AIOps
   - CIO
   - CFO
-  - OpsChain
 draft: false
 featured: true
 coverImage: /img/auditability.svg

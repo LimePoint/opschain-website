@@ -1,6 +1,6 @@
 ---
 title: 'Security, Auditability, and Compliance in a Decentralised Toolchain'
-date: '2026-02-24T10:00'
+date: '2026-02-17T10:00'
 description: >-
   How OpsChain’s Security, Auditability & Compliance features enforce consistent
   governance, generate immutable records, and simplify audits across all
@@ -14,6 +14,8 @@ tags:
   - Automation
   - Modern Operations without Friction
 draft: false
+series: Modern Operations without Friction
+seriesOrder: 6
 # coverImage: /img/complex-code-discussion.png
 ---
 

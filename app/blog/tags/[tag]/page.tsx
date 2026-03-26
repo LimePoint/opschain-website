@@ -74,7 +74,9 @@ export default async function TagPage({ params }: PageProps) {
                     className={`rounded-full px-3 py-1 text-xs transition-colors ${
                       t === tag
                         ? 'bg-primary text-white'
-                        : 'bg-gray-100 text-gray-600 hover:bg-primary hover:text-white'
+                        : t === post.series
+                          ? 'bg-blue-100 font-medium text-blue-800 hover:bg-blue-200'
+                          : 'bg-gray-100 text-gray-600 hover:bg-primary hover:text-white'
                     }`}
                   >
                     {t}

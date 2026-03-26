@@ -1,6 +1,6 @@
 ---
 title: Platform Engineering and the Next Wave of Operational Maturity
-date: '2026-03-03T10:00'
+date: '2026-02-24T10:00'
 description: >-
   Learn how OpsChain enables governed self-service, giving developers autonomy
   without sacrificing operational safety.
@@ -13,7 +13,9 @@ tags:
   - DevOps
   - Modern Operations without Friction
 draft: false
-# coverImage: /img/complex-code-discussion.png
+series: Modern Operations without Friction
+seriesOrder: 7
+coverImage: /img/complex-code-discussion.png
 ---
 
 Platform engineering promises standardization, yet many enterprises struggle to align developer experience with operational control.  

@@ -1,6 +1,6 @@
 ---
 title: The Human Factor in Enterprise Operations
-date: '2026-01-27T10:00'
+date: '2026-02-03T10:00'
 description: >-
   Learn how OpsChain provides a single source of operational truth, reducing
   handover errors. Automates routine governance, so humans can focus on
@@ -15,6 +15,8 @@ tags:
   - Human Error
   - Modern Operations without Friction
 draft: false
+series: Modern Operations without Friction
+seriesOrder: 4
 # coverImage: /img/complex-code-discussion.png
 ---
 
