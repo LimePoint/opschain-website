@@ -17,7 +17,7 @@ tags:
   - CFO
 draft: false
 featured: true
-coverImage: /img/auditability.svg
+coverImage: /img/opschain-analytics.svg
 ---
 
 In every enterprise, the ability to change is the real measure of resilience. Yet most organisations remain constrained not by strategy, but by structural limits in how they fund, deliver, and absorb change.
