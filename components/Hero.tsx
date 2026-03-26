@@ -92,7 +92,7 @@ export function Hero() {
           animate='visible'
           transition={{ duration: shouldReduce ? 0 : 0.5, delay: shouldReduce ? 0 : 1.8 }}
         >
-          Trusted by teams in utilities, banking, and telecommunications
+          {/*Trusted by teams in utilities, banking, and telecommunications*/}
         </motion.p>
       </div>
     </section>
