@@ -30,7 +30,7 @@ There is no separate CMS dev server. Velite processes content inline during `nex
 ## Content
 
 Content lives in `content/` as Markdown with YAML frontmatter:
-- `content/blog/` — Blog posts (schema: title, date, description, author, slug, tags, draft, ogImage)
+- `content/blog/` — Blog posts (schema: title, date, description, author, slug, tags, draft, series, seriesOrder, coverImage, ogImage)
 - `content/datasheets/` — Gated downloads (schema: title, description, slug, highlights, downloadUrl, available)
 - `content/webinars/` — Events (schema: title, date, description, slug, status, speakers, zoomLink, recordingUrl)
 
@@ -43,7 +43,17 @@ Schemas are defined in `velite.config.ts` using Zod. Content is consumed via typ
 import { posts, datasheets, webinars } from '@/.velite'
 ```
 
-The `lib/content.ts` module wraps these imports with accessor functions (filtering, sorting, tags, authors, related posts).
+The `lib/content.ts` module wraps these imports with accessor functions (filtering, sorting, tags, authors, related posts, series).
+
+### Blog Series
+
+Blog posts can belong to a series via two optional frontmatter fields:
+- `series` — Series name (e.g., `Modern Operations without Friction`)
+- `seriesOrder` — Position within the series (1-based integer)
+
+Series posts should also include the series name in their `tags` array for discoverability. The series tag renders with distinct blue styling across listing cards, sidebar, tag filter pages, and individual post pages. A "Part X of N" badge appears in the metadata line of listing cards and post headers.
+
+Helpers in `lib/content.ts`: `getSeriesPosts()`, `getSeriesInfo()`
 
 ## Environment Variables
 

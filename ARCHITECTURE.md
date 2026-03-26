@@ -32,7 +32,7 @@ app/                            # Next.js App Router — all page routes
   layout.tsx                    # Root layout: fonts, metadata, Navbar, Footer, GTM, RouteChangeTracker
   page.tsx                      # Homepage: Hero, StatBar, FeatureGrid, ProductTour, Verticals, etc.
   globals.css                   # Tailwind imports, design tokens (@theme), prose styles
-  blog/                         # /blog/ index + /blog/[slug]/ dynamic posts
+  blog/                         # /blog/ index + /blog/[slug]/ posts + /blog/tags/[tag]/ filtered views
   features/                     # 7 feature pages (autonomous-agents, governed-intelligence, etc.)
   solutions/                    # 3 vertical landing pages (utilities-energy, banking-finance, telecommunications)
   resources/                    # Datasheet index + /resources/[slug]/ gated downloads
@@ -66,12 +66,13 @@ components/
   AnimatedSection.tsx           # Scroll-reveal wrapper with configurable direction
 
 content/                        # Markdown content (source of truth)
-  blog/                         # 20 blog posts
-  datasheets/                   # 5 gated datasheets
-  webinars/                     # 3 webinars (upcoming, past, on-demand)
+  blog/                         # Blog posts (incl. series with series/seriesOrder fields)
+  datasheets/                   # Gated datasheets
+  webinars/                     # Webinars (upcoming, past, on-demand)
 
 lib/
-  content.ts                    # Typed accessors wrapping Velite imports (getAllBlogPosts, etc.)
+  content.ts                    # Typed accessors wrapping Velite imports (posts, series, tags, datasheets, webinars)
+  search-index.ts               # Build-time search index (blog, datasheets, webinars, pages)
   utm.ts                        # UTM parameter capture/retrieval via sessionStorage
 
 public/
@@ -121,7 +122,7 @@ graph TB
 2. On `npm run build`, the Velite webpack plugin processes all content files
 3. Velite validates frontmatter against Zod schemas defined in `velite.config.ts`
 4. Valid content is output as typed TypeScript in `.velite/index.ts` (arrays of `Post`, `Datasheet`, `Webinar`)
-5. `lib/content.ts` imports from `.velite/` and provides accessor functions (filtering, sorting, related posts)
+5. `lib/content.ts` imports from `.velite/` and provides accessor functions (filtering, sorting, related posts, series grouping)
 6. Page components call these accessors at build time to generate static HTML
 7. `generateStaticParams()` in dynamic routes (`[slug]/page.tsx`) produces one HTML file per content item
 8. `next-sitemap` runs in `postbuild` to generate `sitemap.xml` and `robots.txt` into `out/`
@@ -165,7 +166,7 @@ No secrets are required at build or runtime. The Salesforce org ID is not sensit
 
 Configuration files:
 - `next.config.ts` — Build mode (`output: 'export'`), trailing slashes, image config, Velite webpack plugin
-- `velite.config.ts` — Content collection schemas (Zod), output paths
+- `velite.config.ts` — Content collection schemas (Zod: posts with series/seriesOrder, datasheets, webinars, pages), output paths
 - `next-sitemap.config.js` — Sitemap URL, robots.txt policies, output directory
 - `netlify.toml` — Build command, publish directory, SPA redirect
 - `tailwind.config.ts` — Design tokens (colors, fonts, spacing)
