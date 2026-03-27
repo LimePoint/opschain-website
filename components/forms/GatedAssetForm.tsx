@@ -74,6 +74,8 @@ export function GatedAssetForm({ assetName, downloadUrl, available = false }: Ga
         <FormField label='Work Email' name='email' type='email' required placeholder='tony@starkindustries.com' />
         <FormField label='Company' name='company' required placeholder='Stark Industries' />
         <FormField label='Job Title' name='title' placeholder='CEO' />
+        <input type='hidden' name='00NOl000003maDx' value={assetName} />
+        <input type='hidden' name='00NOl000003maHB' value={downloadUrl || ''} />
       </SalesforceForm>
     </div>
   )

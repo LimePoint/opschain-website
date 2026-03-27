@@ -1,6 +1,6 @@
 ---
 title: "OpsChain for Telecommunications"
-description: How OpsChain helps telecommunications providers govern network change management across 5G, IMS, and hybrid infrastructure.
+description: Learn how OpsChain helps telecommunications providers govern network change management across 5G, IMS, and hybrid infrastructure.
 slug: opschain-telecommunications
 highlights:
   - IEC 62443 aligned network change governance

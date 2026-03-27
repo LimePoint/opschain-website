@@ -1,6 +1,6 @@
 ---
 title: "OpsChain for Banking & Financial Services"
-description: How OpsChain helps banking and financial services organisations meet PCI-DSS and APRA CPS 234 requirements while automating change governance.
+description: Learn how OpsChain helps banking and financial services organisations meet PCI-DSS and APRA CPS 234 requirements while automating change governance.
 slug: opschain-banking-finance
 highlights:
   - PCI-DSS compliant change management workflows
