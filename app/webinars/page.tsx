@@ -1,7 +1,13 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { getAllWebinars, isWebinarsVisible } from '@/lib/content'
+import {
+  getAllWebinars,
+  getWebinarStatus,
+  formatWebinarDate,
+  getWebinarISODate,
+  isWebinarsVisible,
+} from '@/lib/content'
 import { CountdownTimer } from '@/components/CountdownTimer'
 import { PageTransition } from '@/components/PageTransition'
 
@@ -14,9 +20,9 @@ export const metadata: Metadata = {
 export default function WebinarsIndex() {
   if (!isWebinarsVisible()) notFound()
   const webinars = getAllWebinars()
-  const upcoming = webinars.filter((w) => w.status === 'upcoming')
-  const past = webinars.filter((w) => w.status === 'past')
-  const onDemand = webinars.filter((w) => w.status === 'on-demand')
+  const upcoming = webinars.filter((w) => getWebinarStatus(w) === 'upcoming').reverse()
+  const past = webinars.filter((w) => getWebinarStatus(w) === 'past')
+  const onDemand = webinars.filter((w) => getWebinarStatus(w) === 'on-demand')
 
   return (
     <PageTransition>
@@ -38,15 +44,7 @@ export default function WebinarsIndex() {
                 >
                   <div className='flex items-center gap-2 text-sm text-primary font-medium'>
                     <span>&#128197;</span>
-                    <time dateTime={w.date}>
-                      {new Date(w.date).toLocaleDateString('en-US', {
-                        year: 'numeric',
-                        month: 'long',
-                        day: 'numeric',
-                        hour: 'numeric',
-                        minute: '2-digit',
-                      })}
-                    </time>
+                    <time dateTime={w.date}>{formatWebinarDate(w)}</time>
                   </div>
                   <div className='mt-2 flex items-center gap-2'>
                     <h3 className='text-xl font-semibold font-heading text-gray-900 group-hover:text-primary'>
@@ -63,7 +61,7 @@ export default function WebinarsIndex() {
                     <p className='mt-2 text-sm text-gray-500'>Speakers: {w.speakers.join(', ')}</p>
                   )}
                   <div className='mt-3'>
-                    <CountdownTimer targetDate={w.date} />
+                    <CountdownTimer targetDate={getWebinarISODate(w)} />
                   </div>
                 </Link>
               ))}
@@ -120,11 +118,7 @@ export default function WebinarsIndex() {
                         )}
                       </div>
                       <p className='mt-1 text-sm text-gray-500'>
-                        {new Date(w.date).toLocaleDateString('en-US', {
-                          year: 'numeric',
-                          month: 'long',
-                          day: 'numeric',
-                        })}
+                        {formatWebinarDate(w, { year: 'numeric', month: 'long', day: 'numeric' })}
                       </p>
                     </div>
                     <span className='text-sm font-medium text-primary'>View &rarr;</span>

@@ -13,8 +13,6 @@ available: false
 draft: false
 ---
 
-## OpsChain Platform Overview
-
 OpsChain is an enterprise operations platform that automates infrastructure change management with AI-powered agents, governed workflows, and end-to-end audit trails.
 
 This datasheet covers the platform's core capabilities, architecture, supported integrations, and deployment options.

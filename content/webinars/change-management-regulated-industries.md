@@ -3,10 +3,8 @@ title: "Change Management in Regulated Industries: NERC CIP, PCI-DSS, and Beyond
 date: "2026-03-10T11:00"
 description: Explore how OpsChain helps regulated enterprises automate change governance while meeting compliance requirements across utilities, banking, and telecommunications.
 slug: change-management-regulated-industries
-status: past
 speakers:
   - Goran Stankovski, CEO, LimePoint
-zoomLink: ""
 recordingUrl: ""
 draft: false
 ---

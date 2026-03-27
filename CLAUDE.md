@@ -32,7 +32,7 @@ There is no separate CMS dev server. Velite processes content inline during `nex
 Content lives in `content/` as Markdown with YAML frontmatter:
 - `content/blog/` — Blog posts (schema: title, date, description, author, slug, tags, draft, series, seriesOrder, coverImage, ogImage)
 - `content/datasheets/` — Gated downloads (schema: title, description, slug, highlights, downloadUrl, available)
-- `content/webinars/` — Events (schema: title, date, description, slug, status, speakers, zoomLink, recordingUrl)
+- `content/webinars/` — Events (schema: title, date, description, slug, highlights, speakers, recordingUrl, onDemand)
 
 Data-driven content (TypeScript, not Markdown):
 - `content/authors.ts` — Author profiles (name, email, role, bio, avatarUrl, social links)

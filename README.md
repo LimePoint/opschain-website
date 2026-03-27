@@ -126,8 +126,8 @@ Tags in blog posts are clickable and link to `/blog/tags/[tag]/` which shows a f
 |---|---|
 | Add/edit a webinar | `content/webinars/<slug>.md` |
 | Frontmatter schema | `velite.config.ts` → `webinars` collection |
-| Status | `status: upcoming | past | on-demand` in frontmatter |
-| Zoom/recording links | `zoomLink` / `recordingUrl` in frontmatter |
+| Status | Derived from date (upcoming if future, past otherwise); `onDemand: true` for on-demand |
+| Recording links | `recordingUrl` in frontmatter |
 
 ### Authors
 

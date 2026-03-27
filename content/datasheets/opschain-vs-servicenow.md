@@ -13,6 +13,4 @@ available: false
 draft: false
 ---
 
-## OpsChain vs. ServiceNow Change Management
-
 ServiceNow is the industry standard for IT Service Management and change records. But it was designed as a record-keeping system, not an execution engine. OpsChain complements or replaces ServiceNow's change management module by providing governed automation that bridges the gap between change approval and change execution.

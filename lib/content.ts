@@ -5,6 +5,68 @@ export type { Author }
 export type BlogPost = (typeof posts)[number]
 export type Datasheet = (typeof datasheets)[number]
 export type Webinar = (typeof webinars)[number]
+export type WebinarStatus = 'upcoming' | 'past' | 'on-demand'
+
+export function getWebinarStatus(w: Webinar): WebinarStatus {
+  if (new Date(w.date) > new Date()) return 'upcoming'
+  if (w.onDemand) return 'on-demand'
+  return 'past'
+}
+
+export function formatWebinarDate(
+  w: Webinar,
+  options: Intl.DateTimeFormatOptions = {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+    hour: 'numeric',
+    minute: '2-digit',
+  }
+): string {
+  const formatted = new Date(w.date).toLocaleString('en-AU', { timeZone: w.timezone, ...options })
+  const abbr = getWebinarTimezoneAbbr(w)
+  return `${formatted} ${abbr}`
+}
+
+/**
+ * Returns an ISO 8601 string with the correct UTC offset for the webinar's timezone.
+ * Useful for client-side Date parsing that needs the correct absolute time.
+ */
+export function getWebinarISODate(w: Webinar): string {
+  const date = new Date(w.date)
+  // Format the date parts in the target timezone
+  const parts = new Intl.DateTimeFormat('en-CA', {
+    timeZone: w.timezone,
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+    hour12: false,
+  }).formatToParts(date)
+  const get = (type: string) => parts.find((p) => p.type === type)?.value ?? '00'
+  const localStr = `${get('year')}-${get('month')}-${get('day')}T${get('hour')}:${get('minute')}:${get('second')}`
+  // Compute offset: difference between UTC and the timezone-local representation
+  const utcMs = date.getTime()
+  const localDate = new Date(localStr + 'Z')
+  const offsetMs = localDate.getTime() - utcMs
+  // Invert: UTC + offset = local, so timezone offset from UTC = -offsetMs
+  const totalMinutes = Math.round(-offsetMs / 60000)
+  const sign = totalMinutes >= 0 ? '+' : '-'
+  const absMinutes = Math.abs(totalMinutes)
+  const offH = String(Math.floor(absMinutes / 60)).padStart(2, '0')
+  const offM = String(absMinutes % 60).padStart(2, '0')
+  return `${get('year')}-${get('month')}-${get('day')}T${get('hour')}:${get('minute')}:${get('second')}${sign}${offH}:${offM}`
+}
+
+export function getWebinarTimezoneAbbr(w: Webinar): string {
+  const parts = new Intl.DateTimeFormat('en-AU', {
+    timeZone: w.timezone,
+    timeZoneName: 'short',
+  }).formatToParts(new Date(w.date))
+  return parts.find((p) => p.type === 'timeZoneName')?.value ?? w.timezone
+}
 
 export function getAuthor(name: string): Author | undefined {
   return authors[name]

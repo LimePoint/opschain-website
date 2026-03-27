@@ -60,6 +60,8 @@ export default async function DatasheetPage({ params }: PageProps) {
           </div>
         )}
 
+        {ds.content && <div className='prose mt-8 max-w-none' dangerouslySetInnerHTML={{ __html: ds.content }} />}
+
         <div className='mt-10'>
           <GatedAssetForm assetName={ds.title} downloadUrl={ds.downloadUrl || undefined} available={ds.available} />
         </div>

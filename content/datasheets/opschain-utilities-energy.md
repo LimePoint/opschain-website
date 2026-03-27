@@ -13,6 +13,4 @@ available: false
 draft: false
 ---
 
-## OpsChain for Utilities & Energy
-
 Utilities and energy companies face unique operational challenges, aging infrastructure, strict regulatory requirements, and the convergence of OT and IT systems. OpsChain provides a governed automation platform that addresses NERC CIP and IEC 62443 compliance while enabling modern operational practices.

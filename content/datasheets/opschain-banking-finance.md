@@ -8,11 +8,9 @@ highlights:
   - Immutable audit logs for regulatory evidence
   - Governed automation across multi-cloud banking environments
   - Segregation of duties enforcement with AI oversight
-downloadUrl: "https://file-examples.com/wp-content/storage/2017/10/file-sample_150kB.pdf"
+downloadUrl: ""
 available: true
 draft: false
 ---
-
-## OpsChain for Banking & Financial Services
 
 Financial institutions operate under some of the most stringent regulatory frameworks globally. OpsChain provides a governed automation platform that aligns with PCI-DSS and APRA CPS 234 requirements, enabling banks to automate change governance while maintaining complete compliance traceability.
