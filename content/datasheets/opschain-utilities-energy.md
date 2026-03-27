@@ -1,6 +1,6 @@
 ---
 title: "OpsChain for Utilities & Energy"
-description: How OpsChain helps utilities and energy companies meet NERC CIP and IEC 62443 compliance requirements while automating operational change management.
+description: Learn how OpsChain helps utilities and energy companies meet NERC CIP and IEC 62443 compliance requirements while automating operational change management.
 slug: opschain-utilities-energy
 highlights:
   - NERC CIP compliance-ready change governance

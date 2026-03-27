@@ -40,11 +40,7 @@ const footerLinks = {
         href: 'https://www.limepoint.com/about-limepoint',
         external: true,
       },
-      {
-        label: 'Contact Us',
-        href: 'https://www.limepoint.com/contact',
-        external: true,
-      },
+      { label: 'Contact Us', href: '/contact/' },
     ],
   },
   legal: {

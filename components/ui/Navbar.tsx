@@ -302,10 +302,10 @@ export function Navbar() {
         <div className='hidden items-center gap-3 lg:flex'>
           <SearchDialog />
           <Link
-            href='/book-demo/'
+            href='/contact/'
             className='inline-flex items-center rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-primary-dark transition-colors'
           >
-            Book a Demo
+            Contact Us
           </Link>
         </div>
 
@@ -404,11 +404,11 @@ export function Navbar() {
 
               <div className='pt-2'>
                 <Link
-                  href='/book-demo/'
+                  href='/contact/'
                   onClick={closeMobile}
                   className='block rounded-lg bg-primary px-4 py-2.5 text-center text-sm font-semibold text-white hover:bg-primary-dark'
                 >
-                  Book a Demo
+                  Contact Us
                 </Link>
               </div>
             </div>
